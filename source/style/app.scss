@@ -1,5 +1,18 @@
-body {
-  margin: 0;
+
+.clearfix:before,
+.clearfix:after {
+ content: "";
+ display: table;
+}
+.clearfix:after {
+ clear: both;
+} 
+
+.wrapper {
+	background-image: url("../img/back320.jpg");
+	
+	width: 320px;
+	height: 568px;
 }
 
-@import 'common/greating';
+
