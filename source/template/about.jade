@@ -1,0 +1,37 @@
+- var frontend_skills = ["HTML5", "CSS3", "JavaScript & jQuery"];
+- var backend_skills = ["PHP", "mySQL", "Node.js & npm", "Mongo.db"];
+- var workflow_skills = ["Git", "Gulp", "Bower"];
+
+doctype html
+html
+  include common/_head
+  body
+    <!--[if lt IE 7]>
+    <p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите его</a></p>
+    <![endif]-->
+
+    .main-about
+      .head
+        h1.main-about_who_h-big ОБО МНЕ
+      .who
+        .main-about_photo-about 
+          img(src="assets/img/ava141.jpg", class="main-about_photo-about_ava", alt="фото")
+        h1.main-about_who_h-small КТО Я
+        .main-about_delim ---
+        .main-about_content  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint impedit optio ad blanditiis ex cumque fugiat? Voluptates ducimus repudiandae deserunt obcaecati, cum modi omnis quibusdam dolorum, tempore neque ipsum quis!
+
+      .why
+        h1.main-about_who_h-small ЧЕМ Я МОГУ БЫТЬ ВАМ ПОЛЕЗЕН
+        .main-about_why_delim ---
+        .main-about_why_content  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint impedit optio ad blanditiis ex cumque fugiat? Voluptates ducimus repudiandae deserunt obcaecati, cum modi omnis quibusdam dolorum, tempore neque ipsum quis!
+        .main-about_why_skills
+          .main-about_why_frontend Frontend
+            for name, index in frontend_skills
+              .frontend-skill(id="frontend"+index) #{name}
+          .main-about_why_backend Backend
+            for name, index in backend_skills
+              .backend-skill(id="backend"+index) #{name}
+          .main-about_why_workflow Workflow
+            for name, index in workflow_skills
+              .workflow-skill(id="workflow"+index) #{name}
+
