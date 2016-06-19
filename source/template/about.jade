@@ -15,7 +15,7 @@ html
         h1.main-about_who_h-big ОБО МНЕ
       .who
         .main-about_photo-about 
-          img(src="assets/img/ava141.jpg", class="main-about_photo-about_ava", alt="фото")
+          img(src="assets/img/matrix_ava_437_390.jpg", class="main-about_photo-about_ava", alt="фото")
         h1.main-about_who_h-small КТО Я
         .main-about_delim ---
         .main-about_content  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint impedit optio ad blanditiis ex cumque fugiat? Voluptates ducimus repudiandae deserunt obcaecati, cum modi omnis quibusdam dolorum, tempore neque ipsum quis!
@@ -23,15 +23,25 @@ html
       .why
         h1.main-about_who_h-small ЧЕМ Я МОГУ БЫТЬ ВАМ ПОЛЕЗЕН
         .main-about_why_delim ---
-        .main-about_why_content  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint impedit optio ad blanditiis ex cumque fugiat? Voluptates ducimus repudiandae deserunt obcaecati, cum modi omnis quibusdam dolorum, tempore neque ipsum quis!
+        .main-about_why_content  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint impedit optio ad blanditiis ex cumque fugiat? Voluptates ducimus repudiandae deserunt obcaecati, cum modi omnis quibusdam dolorum, tempore neque ipsum quis!  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ducimus ratione quasi deserunt corrupti cum, tempore corporis sunt, temporibus doloremque perspiciatis similique, non consequuntur soluta culpa quisquam doloribus neque. Non.
         .main-about_why_skills
-          .main-about_why_frontend Frontend
-            for name, index in frontend_skills
-              .frontend-skill(id="frontend"+index) #{name}
-          .main-about_why_backend Backend
-            for name, index in backend_skills
-              .backend-skill(id="backend"+index) #{name}
-          .main-about_why_workflow Workflow
-            for name, index in workflow_skills
-              .workflow-skill(id="workflow"+index) #{name}
+          ul.list
+            li.main-about_why_frontend Frontend
+              ul.list
+                for name, index in frontend_skills
+                  li(id="frontend_"+name, class="frontend-skill")
+                    .main-about_why_skills_skill #{name}
+                      img(src="assets/img/Ellipse 3.png", class="main-about_why_skills_round-svg", alt="уровень владения навыками "+name)
+            li.main-about_why_backend Backend
+              ul.list
+                for name, index in backend_skills
+                  li(id="backend_"+name, class="backend-skill")
+                    .main-about_why_skills_skill #{name}
+                      img(src="assets/img/Ellipse 3.png", class="main-about_why_skills_round-svg", alt="уровень владения навыками "+name)
+            li.main-about_why_workflow Workflow
+              ul.list
+                for name, index in workflow_skills
+                  li(id="workflow_"+name, class="workflow-skill")
+                    .main-about_why_skills_skill #{name}
+                      img(src="assets/img/Ellipse 3.png", class="main-about_why_skills_round-svg", alt="уровень владения навыками "+name)
 

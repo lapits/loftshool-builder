@@ -1,0 +1,39 @@
+
+
+.main-about {
+	@include clearfix;
+	min-width: 100%;
+}
+
+.head {
+	display: inline-block;
+	float: left;
+	width: 24.277%;
+
+}
+
+.who {
+	display: inline-block;
+	float: left;
+	width: 26.666%;
+}
+
+.why {
+	display: inline-block;
+	float: left;
+	width: 49.057%;
+}
+
+
+.main-about_photo-about {
+	display: inline-block;
+	max-width: 437px;
+	max-height: 390px;
+}
+
+.main-about_photo-about_ava {
+	max-width: 100%;
+}
+
+
+
