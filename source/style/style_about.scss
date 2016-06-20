@@ -3,27 +3,42 @@
 .main-about {
 	@include clearfix;
 	min-width: 100%;
+	height: 650px;
 }
+
+
 
 .head {
 	display: inline-block;
 	float: left;
-	width: 24.277%;
-
+	width: 24%;
+	min-height: 100%;
+	text-align: center;
+	background-color: #ebefe2;
 }
 
-.who {
+.main-about_head_wrapper {
+	display: block;
+	position: relative;
+	max-width: 100%;
+	height: 100%;
+	background-image: url("../img/about_header.png");
+	background-repeat: no-repeat;
+	background-size: auto;
+	background-position: center;
+	line-height: 63px;
+}
+
+.main-about_who_h-big {
 	display: inline-block;
-	float: left;
-	width: 26.666%;
+	font-family: Webissimo-Regular , serif;
+	font-size: 63px;
 }
 
-.why {
-	display: inline-block;
-	float: left;
-	width: 49.057%;
+.main-about_who_h-small {
+	font-family: Webissimo-Regular , serif;
+	font-size: 35px;
 }
-
 
 .main-about_photo-about {
 	display: inline-block;
@@ -35,5 +50,22 @@
 	max-width: 100%;
 }
 
+
+
+.who {
+	display: inline-block;
+	float: left;
+	width: 26%;
+	min-height: 100%;
+	background-color: #ebefe2;
+}
+
+.why {
+	display: inline-block;
+	float: left;
+	width: 50%;
+	min-height: 100%;
+	background-color: #f3f4ee;
+}
 
 
