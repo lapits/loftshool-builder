@@ -4,17 +4,22 @@
 	@include clearfix;
 	min-width: 100%;
 	height: 650px;
+	text-align: center;
 }
 
+.main-about_content {
+	font-family: Roboto-Regular , serif;
+	font-size: 16px;
+	margin: 10px 0 20px 0;
+	text-align: left;	
+}
 
 .head {
 	display: inline-block;
 	position: relative;
-
 	float: left;
 	width: 24%;
 	min-height: 100%;
-	text-align: center;
 	background-color: #ebefe2;
 }
 
@@ -27,16 +32,7 @@
 	background-repeat: no-repeat;
 	background-size: auto;
 	background-position: center;
-	line-height: 63px;
-	margin: 20px;
-}
-
-.main-about_who_h-big {
-	display: block;
-	position: relative;
-	max-width: 100%;
-	font-family: Webissimo-Regular , serif;
-	font-size: 63px;
+	line-height: 125px;
 	margin: 0;
 }
 
@@ -48,27 +44,8 @@
 	height: 3px;
 	width: 89px;
 	max-width: 100%;
-	margin: 17px auto;
+	margin: -10px auto;
 }
-
-
-.main-about_who_h-small {
-	display: inline-block;
-	max-width: 100%;
-	font-family: Webissimo-Regular , serif;
-	font-size: 35px;
-}
-
-.main-about_photo-about {
-	display: inline-block;
-	max-width: 437px;
-	max-height: 390px;
-}
-
-.main-about_photo-about_ava {
-	max-width: 100%;
-}
-
 
 
 .who {
@@ -79,6 +56,52 @@
 	background-color: #ebefe2;
 }
 
+.main-about_who_h-big {
+	display: block;
+	position: relative;
+	max-width: 100%;
+	font-family: Webissimo-Regular , serif;
+	font-size: 63px;
+	margin: 0;
+}
+
+
+.main-about_who_delim {
+	display: block;
+	position: relative;
+	stroke: #373e42;
+	stroke-width: 3px;
+	height: 3px;
+	width: 89px;
+	max-width: 100%;
+	margin: 8px auto;
+}
+
+.main-about_photo-about {
+	display: inline-block;
+	max-width: 437px;
+	max-height: 390px;
+	margin: 40px auto 22px;
+}
+
+.main-about_photo-about_ava {
+	max-width: 90%;
+}
+
+
+.main-about_who_h-small {
+	display: inline-block;
+	position: relative;
+	max-width: 100%;
+	font-family: Webissimo-Regular , serif;
+	color: #566358;
+	font-size: 35px;
+	margin: 10px auto;
+}
+
+
+
+
 .why {
 	display: inline-block;
 	float: left;
@@ -87,4 +110,64 @@
 	background-color: #f3f4ee;
 }
 
+.main-about_why_delim {
+	display: block;
+	position: relative;
+	stroke: #373e42;
+	stroke-width: 3px;
+	height: 3px;
+	width: 89px;
+	max-width: 100%;
+	margin: 18px auto;
+}
 
+.why_wrapper {
+	margin: 40px auto;
+	width: 90%;
+}
+
+.why_h-small {
+	display: inline-block;
+	position: relative;
+	max-width: 100%;
+	font-family: Webissimo-Regular , serif;
+	color: #566358;
+	font-size: 35px;
+	margin: 0 auto;
+	p {
+		margin: 0;
+	}
+}
+
+.main-about_why_frontend {
+	font-family: Roboto-Medium, serif;
+	font-size: 28px;
+	margin: 0;
+	text-align: left;	
+	color: #566358;
+}
+
+.main-about_why_backend {
+	font-family: Roboto-Medium, serif;
+	font-size: 28px;
+	margin: 0;
+	text-align: left;	
+	color: #566358;
+}
+
+.main-about_why_workflow {
+	font-family: Roboto-Medium, serif;
+	font-size: 28px;
+	margin: 0;
+	text-align: left;	
+	color: #566358;
+}
+
+.main-about_why_skills_skill {
+	font-family: Roboto-Medium, serif;
+	font-size: 14px;
+	margin: 0;
+	text-align: left;	
+	color: #4e8839;
+
+}

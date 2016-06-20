@@ -20,33 +20,38 @@ html
         .main-about_photo-about 
           img(src="assets/img/matrix_ava_437_390.jpg", class="main-about_photo-about_ava", alt="фото")
         h1.main-about_who_h-small КТО Я
-        .main-about_delim
-        .main-about_content  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint impedit optio ad blanditiis ex cumque fugiat? Voluptates ducimus repudiandae deserunt obcaecati, cum modi omnis quibusdam dolorum, tempore neque ipsum quis!
+        svg.main-about_who_delim
+          line(x1="0",y1="0",x2="89",y2="0") 
+
+        .main-about_content Я веб разработчик из Санкт-Петербурга. Мне 42 года. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты. Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
 
       .why
-        h1.main-about_who_h-small ЧЕМ Я МОГУ БЫТЬ ВАМ ПОЛЕЗЕН
-        .main-about_why_delim 
+        .why_wrapper
+          h1.why_h-small 
+            p ЧЕМ Я МОГУ БЫТЬ
+            p ВАМ ПОЛЕЗЕН
+          svg.main-about_why_delim
+            line(x1="0",y1="0",x2="89",y2="0") 
 
-
-        .main-about_why_content  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint impedit optio ad blanditiis ex cumque fugiat? Voluptates ducimus repudiandae deserunt obcaecati, cum modi omnis quibusdam dolorum, tempore neque ipsum quis!  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ducimus ratione quasi deserunt corrupti cum, tempore corporis sunt, temporibus doloremque perspiciatis similique, non consequuntur soluta culpa quisquam doloribus neque. Non.
-        .main-about_why_skills
-          ul.list
-            li.main-about_why_frontend Frontend
-              ul.list
-                for name, index in frontend_skills
-                  li(id="frontend_"+name, class="frontend-skill")
-                    .main-about_why_skills_skill #{name}
-                      img(src="assets/img/Ellipse 3.png", class="main-about_why_skills_round-svg", alt="уровень владения навыками "+name)
-            li.main-about_why_backend Backend
-              ul.list
-                for name, index in backend_skills
-                  li(id="backend_"+name, class="backend-skill")
-                    .main-about_why_skills_skill #{name}
-                      img(src="assets/img/Ellipse 3.png", class="main-about_why_skills_round-svg", alt="уровень владения навыками "+name)
-            li.main-about_why_workflow Workflow
-              ul.list
-                for name, index in workflow_skills
-                  li(id="workflow_"+name, class="workflow-skill")
-                    .main-about_why_skills_skill #{name}
-                      img(src="assets/img/Ellipse 3.png", class="main-about_why_skills_round-svg", alt="уровень владения навыками "+name)
+          .main-about_content  Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
+          .main-about_why_skills
+            ul.list
+              li.main-about_why_frontend Frontend
+                ul.list
+                  for name, index in frontend_skills
+                    li(id="frontend_"+name, class="frontend-skill")
+                      .main-about_why_skills_skill #{name}
+                        img(src="assets/img/Ellipse 3.png", class="main-about_why_skills_round-svg", alt="уровень владения навыками "+name)
+              li.main-about_why_backend Backend
+                ul.list
+                  for name, index in backend_skills
+                    li(id="backend_"+name, class="backend-skill")
+                      .main-about_why_skills_skill #{name}
+                        //- img(src="assets/img/Ellipse 3.png", class="main-about_why_skills_round-svg", alt="уровень владения навыками "+name)
+              li.main-about_why_workflow Workflow
+                ul.list
+                  for name, index in workflow_skills
+                    li(id="workflow_"+name, class="workflow-skill")
+                      .main-about_why_skills_skill #{name}
+                        //- img(src="assets/img/Ellipse 3.png", class="main-about_why_skills_round-svg", alt="уровень владения навыками "+name)
 
