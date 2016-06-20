@@ -7,9 +7,10 @@
 }
 
 
-
 .head {
 	display: inline-block;
+	position: relative;
+
 	float: left;
 	width: 24%;
 	min-height: 100%;
@@ -27,15 +28,33 @@
 	background-size: auto;
 	background-position: center;
 	line-height: 63px;
+	margin: 20px;
 }
 
 .main-about_who_h-big {
-	display: inline-block;
+	display: block;
+	position: relative;
+	max-width: 100%;
 	font-family: Webissimo-Regular , serif;
 	font-size: 63px;
+	margin: 0;
 }
 
+.main-about_delim {
+	display: block;
+	position: relative;
+	stroke: #373e42;
+	stroke-width: 3px;
+	height: 3px;
+	width: 89px;
+	max-width: 100%;
+	margin: 17px auto;
+}
+
+
 .main-about_who_h-small {
+	display: inline-block;
+	max-width: 100%;
 	font-family: Webissimo-Regular , serif;
 	font-size: 35px;
 }
