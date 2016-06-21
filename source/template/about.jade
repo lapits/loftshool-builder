@@ -41,17 +41,23 @@ html
                   for name, index in frontend_skills
                     li(id="frontend_"+name, class="frontend-skill")
                       .main-about_why_skills_skill #{name}
-                        img(src="assets/img/Ellipse 3.png", class="main-about_why_skills_round-svg", alt="уровень владения навыками "+name)
+                        svg(width="120",height="120",class="g-circles")
+                          circle(r="50",cx="60",cy="60",stroke="#DDDAD3",fill="none",transform="rotate(-90 60 60)")
+                          circle(r="50",cx="60",cy="60",stroke="#76A365",class="sector",transform="rotate(-90 60 60)")
               li.main-about_why_backend Backend
                 ul.list
                   for name, index in backend_skills
                     li(id="backend_"+name, class="backend-skill")
                       .main-about_why_skills_skill #{name}
-                        //- img(src="assets/img/Ellipse 3.png", class="main-about_why_skills_round-svg", alt="уровень владения навыками "+name)
+                        svg(width="120",height="120",class="g-circles")
+                          circle(r="50",cx="60",cy="60",stroke="#DDDAD3",fill="none",transform="rotate(-90 60 60)")
+                          circle(r="50",cx="60",cy="60",stroke="#76A365",class="sector",transform="rotate(-90 60 60)")
               li.main-about_why_workflow Workflow
                 ul.list
                   for name, index in workflow_skills
                     li(id="workflow_"+name, class="workflow-skill")
                       .main-about_why_skills_skill #{name}
-                        //- img(src="assets/img/Ellipse 3.png", class="main-about_why_skills_round-svg", alt="уровень владения навыками "+name)
+                        svg(width="120",height="120",class="g-circles")
+                          circle(r="50",cx="60",cy="60",stroke="#DDDAD3",fill="none",transform="rotate(-90 60 60)")
+                          circle(r="50",cx="60",cy="60",stroke="#76A365",class="sector",transform="rotate(-90 60 60)")
 

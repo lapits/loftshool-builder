@@ -18,7 +18,7 @@
 	display: inline-block;
 	position: relative;
 	float: left;
-	width: 24%;
+	width: 23.6%;
 	min-height: 100%;
 	background-color: #ebefe2;
 }
@@ -51,7 +51,7 @@
 .who {
 	display: inline-block;
 	float: left;
-	width: 26%;
+	width: 26.4%;
 	min-height: 100%;
 	background-color: #ebefe2;
 }
@@ -85,7 +85,7 @@
 }
 
 .main-about_photo-about_ava {
-	max-width: 90%;
+	width: 100%;
 }
 
 
@@ -169,5 +169,16 @@
 	margin: 0;
 	text-align: left;	
 	color: #4e8839;
-
 }
+
+.g-circles {
+ 	fill: none;
+ 	stroke-width: 20px;
+	max-width: 120px;
+	max-height: 120px;
+ }
+
+ .sector {
+ 	stroke-dasharray: 157 314;
+ 	transition: all 1s;
+ }
