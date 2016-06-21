@@ -164,12 +164,24 @@
 }
 
 .main-about_why_skills_skill {
+	position: relative;
 	font-family: Roboto-Medium, serif;
-	font-size: 14px;
-	margin: 0;
-	text-align: left;	
+	line-height: 14px;
+	text-align: center;
 	color: #4e8839;
+	height: 100%;
 }
+
+.main-about_why_skills_skill_name {
+	display: inline-block;
+	position: absolute;
+	font-size: 14px;
+	width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 
 .g-circles {
  	fill: none;
