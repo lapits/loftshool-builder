@@ -1,5 +1,6 @@
 - var socials = ["vk", "git", "in"];
-- var socials_links = ["assets/img/icons/vk.svg", "assets/img/icons/github.svg", "assets/img/icons/in.svg"];
+- var socials_img = ["assets/img/icons/vk.svg", "assets/img/icons/github.svg", "assets/img/icons/in.svg"];
+- var socials_links = ["#", "#", "#"];
 - var navs = ["Мои работы", "Обо мне", "Блог"];
 - var navs_links = ["index.html", "about.html", "index.html"];
 
@@ -22,17 +23,18 @@ html
         .main_name Алексей Лапицкий
         .main_note Личный сайт веб разработчика
         nav.social
-          ul.list
+          ul.social_list
             for name,index in socials
               li(id="social_list-item_"+name, class="social_list-item")
-                //- use(class="social_svg", xlink:href=socials_links[index])  
-                a(href=socials_links[index])
-                  img(class="nav_social_svg", src=socials_links[index], alt="меню: "+name)
+                a(href=socials_links[index],class="social_list-link")
+                  img(class="nav_social_svg", src=socials_img[index], alt="меню: "+name)
         nav.nav
-          ul.list
+          ul.nav_list
             for name,index in navs
+              if index>0
+                li(id="nav_list-item_"+index, class="nav_list-item-separator")  
               li(id="nav_list-item_"+index, class="nav_list-item")
-                a(href=navs_links[index], alt="меню: "+name) #{name}
+                a(href=navs_links[index], alt="меню: "+name, class="nav_list-link") #{name}
     .footer
       .footer_copyrights Алексей Лапицкий
       .footer_comments создано с любовью в LoftSchool 2016
