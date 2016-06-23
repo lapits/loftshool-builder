@@ -1,7 +1,3 @@
-- var frontend_skills = ["HTML5", "CSS3", "JavaScript & jQuery"];
-- var backend_skills = ["PHP", "mySQL", "Node.js & npm", "Mongo.db"];
-- var workflow_skills = ["Git", "Gulp", "Bower"];
-
 doctype html
 html
   include common/_head
@@ -12,6 +8,18 @@ html
 
     .wrapper
 
+      .header
+        nav.top
+          nav.social
+            ul.social_list
+              for name,index in socials
+                li(id="social_list-item_"+name, class="social_list-item")
+                  a(href=socials_links[index],class="social_list-link")
+                    img(class="nav_social_svg", src=socials_img[index], alt="меню: "+name)
+
+          nav.hamburger
+            img(class="nav_social_svg", src="assets/img/icons/hamburger.svg", alt="вызов подменю")
+                       
       .main
         .main_break
         .main_photo
