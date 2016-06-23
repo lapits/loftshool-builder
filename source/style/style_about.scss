@@ -186,11 +186,39 @@
 .g-circles {
  	fill: none;
  	stroke-width: 20px;
-	max-width: 120px;
-	max-height: 120px;
- }
+ 	@media screen and (min-width: 1200px) {
+		width: 120px;
+		height: 120px;
+		max-width: 120px;
+		max-height: 120px;
+	}
+  @media screen and (max-width: 1200px) {
+		width: 120px;
+		height: 120px;
+		max-width: 120px;
+		max-height: 120px;
+	}
+  @media screen and (max-width: 320px) {
+		width: 111px;
+		height: 111px;
+		max-width: 111px;
+		max-height: 111px;
+	}
+}
 
- .sector {
+.circle_experience {
+	r: 50px;
+	cx: 60px;
+	cy: 60px;
+	stroke: #DDDAD3;
+	fill: none;
+	transform: rotate(90deg);
+	transform-origin: 50% 50%;
+}
+
+.sector {
+	stroke: #76A365;
  	stroke-dasharray: 157 314;
+ 	transform-origin: 50% 50%;
  	transition: all 1s;
- }
+}

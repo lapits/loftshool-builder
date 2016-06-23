@@ -59,27 +59,27 @@ html
                     for name, index in frontend_skills
                       li(id="frontend_"+name, class="frontend-skill")
                         .main-about_why_skills_skill
-                          svg(width="120",height="120",class="g-circles",id="frontend"+index)
-                            circle(r="50",cx="60",cy="60",stroke="#DDDAD3",fill="none",transform="rotate(-90 60 60)")
-                            circle(r="50",cx="60",cy="60",stroke="#76A365",class="sector",transform="rotate(-90 60 60)")
+                          svg(class="g-circles",id="frontend"+index)
+                            circle(class="circle_experience")
+                            circle(class="sector circle_experience")
                           .main-about_why_skills_skill_name #{name}
                 li.main-about_why_backend Backend
                   ul.list
                     for name, index in backend_skills
                       li(id="backend_"+name, class="backend-skill")
                         .main-about_why_skills_skill
-                          svg(width="120",height="120",class="g-circles",id="backend"+index)
-                            circle(r="50",cx="60",cy="60",stroke="#DDDAD3",fill="none",transform="rotate(-90 60 60)")
-                            circle(r="50",cx="60",cy="60",stroke="#76A365",class="sector",transform="rotate(-90 60 60)")
+                          svg(class="g-circles",id="backend"+index)
+                            circle(class="circle_experience")
+                            circle(class="sector circle_experience")
                           .main-about_why_skills_skill_name #{name}
                 li.main-about_why_workflow Workflow
                   ul.list
                     for name, index in workflow_skills
                       li(id="workflow_"+name, class="workflow-skill")
                         .main-about_why_skills_skill
-                          svg(width="120",height="120",class="g-circles",id="workflow"+index)
-                            circle(r="50",cx="60",cy="60",stroke="#DDDAD3",fill="none",transform="rotate(-90 60 60)")
-                            circle(r="50",cx="60",cy="60",stroke="#76A365",class="sector",transform="rotate(-90 60 60)")
+                          svg(class="g-circles",id="workflow"+index)
+                            circle(class="circle_experience")
+                            circle(class="sector circle_experience")
                           .main-about_why_skills_skill_name #{name}
 
     .footer
