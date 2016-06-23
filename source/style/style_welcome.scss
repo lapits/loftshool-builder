@@ -4,14 +4,14 @@
 	min-height: 100%;
 }
 
-@media screen and (min-device-width: 1800px) {
+@media screen and (min-width: 1200px) {
 	.wrapper {
 		width: 1800px;
 		background-image: url("../img/back1800.jpg");
 	}
 }
 
-@media screen and (max-device-width: 321px) {
+@media screen and (max-width: 320px) {
 	.wrapper {
 		width: 320px;
 		background-image: url("../img/back320.jpg");
@@ -43,11 +43,11 @@
 	display: block;
 	border-radius: 5px;
 	
-	@media screen and (min-device-width: 1800px) {
-		width: 1800px;
+	@media screen and (min-width: 1200px) {
+		width: 380px;
 	};
 
-	@media screen and (max-device-width: 321px) {
+	@media screen and (max-width: 320px) {
 		width: 300px;
 	};
 

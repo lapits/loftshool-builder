@@ -10,57 +10,70 @@ html
     <p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите его</a></p>
     <![endif]-->
 
-    .main-about
-      .head
-        .main-about_head_wrapper
-          h1.main-about_who_h-big ОБО МНЕ
-        svg.main-about_delim
-          line(x1="0",y1="0",x2="89",y2="0") 
-      .who
-        .main-about_photo-about 
-          img(src="assets/img/matrix_ava_437_390.jpg", class="main-about_photo-about_ava", alt="фото")
-        h1.main-about_who_h-small КТО Я
-        svg.main-about_who_delim
-          line(x1="0",y1="0",x2="89",y2="0") 
+    .wrapper
 
-        .main-about_content Я веб разработчик из Санкт-Петербурга. Мне 42 года. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты. Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
+      .main
+        .main_break
+        .main_photo
+          img(src="assets/img/ava141.jpg", class="ava", alt="фото")
 
-      .why
-        .why_wrapper
-          h1.why_h-small 
-            p ЧЕМ Я МОГУ БЫТЬ
-            p ВАМ ПОЛЕЗЕН
-          svg.main-about_why_delim
+        .main_name Алексей Лапицкий
+        .main_note Личный сайт веб разработчика
+
+      .main-about
+        .head
+          .main-about_head_wrapper
+            h1.main-about_who_h-big ОБО МНЕ
+          svg.main-about_delim
+            line(x1="0",y1="0",x2="89",y2="0") 
+        .who
+          .main-about_photo-about 
+            img(src="assets/img/matrix_ava_437_390.jpg", class="main-about_photo-about_ava", alt="фото")
+          h1.main-about_who_h-small КТО Я
+          svg.main-about_who_delim
             line(x1="0",y1="0",x2="89",y2="0") 
 
-          .main-about_content  Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
-          .main-about_why_skills
-            ul.list
-              li.main-about_why_frontend Frontend
-                ul.list
-                  for name, index in frontend_skills
-                    li(id="frontend_"+name, class="frontend-skill")
-                      .main-about_why_skills_skill
-                        svg(width="120",height="120",class="g-circles",id="frontend"+index)
-                          circle(r="50",cx="60",cy="60",stroke="#DDDAD3",fill="none",transform="rotate(-90 60 60)")
-                          circle(r="50",cx="60",cy="60",stroke="#76A365",class="sector",transform="rotate(-90 60 60)")
-                        .main-about_why_skills_skill_name #{name}
-              li.main-about_why_backend Backend
-                ul.list
-                  for name, index in backend_skills
-                    li(id="backend_"+name, class="backend-skill")
-                      .main-about_why_skills_skill
-                        svg(width="120",height="120",class="g-circles",id="backend"+index)
-                          circle(r="50",cx="60",cy="60",stroke="#DDDAD3",fill="none",transform="rotate(-90 60 60)")
-                          circle(r="50",cx="60",cy="60",stroke="#76A365",class="sector",transform="rotate(-90 60 60)")
-                        .main-about_why_skills_skill_name #{name}
-              li.main-about_why_workflow Workflow
-                ul.list
-                  for name, index in workflow_skills
-                    li(id="workflow_"+name, class="workflow-skill")
-                      .main-about_why_skills_skill
-                        svg(width="120",height="120",class="g-circles",id="workflow"+index)
-                          circle(r="50",cx="60",cy="60",stroke="#DDDAD3",fill="none",transform="rotate(-90 60 60)")
-                          circle(r="50",cx="60",cy="60",stroke="#76A365",class="sector",transform="rotate(-90 60 60)")
-                        .main-about_why_skills_skill_name #{name}
+          .main-about_content Я веб разработчик из Санкт-Петербурга. Мне 42 года. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты. Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
 
+        .why
+          .why_wrapper
+            h1.why_h-small 
+              p ЧЕМ Я МОГУ БЫТЬ
+              p ВАМ ПОЛЕЗЕН
+            svg.main-about_why_delim
+              line(x1="0",y1="0",x2="89",y2="0") 
+
+            .main-about_content  Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
+            .main-about_why_skills
+              ul.list
+                li.main-about_why_frontend Frontend
+                  ul.list
+                    for name, index in frontend_skills
+                      li(id="frontend_"+name, class="frontend-skill")
+                        .main-about_why_skills_skill
+                          svg(width="120",height="120",class="g-circles",id="frontend"+index)
+                            circle(r="50",cx="60",cy="60",stroke="#DDDAD3",fill="none",transform="rotate(-90 60 60)")
+                            circle(r="50",cx="60",cy="60",stroke="#76A365",class="sector",transform="rotate(-90 60 60)")
+                          .main-about_why_skills_skill_name #{name}
+                li.main-about_why_backend Backend
+                  ul.list
+                    for name, index in backend_skills
+                      li(id="backend_"+name, class="backend-skill")
+                        .main-about_why_skills_skill
+                          svg(width="120",height="120",class="g-circles",id="backend"+index)
+                            circle(r="50",cx="60",cy="60",stroke="#DDDAD3",fill="none",transform="rotate(-90 60 60)")
+                            circle(r="50",cx="60",cy="60",stroke="#76A365",class="sector",transform="rotate(-90 60 60)")
+                          .main-about_why_skills_skill_name #{name}
+                li.main-about_why_workflow Workflow
+                  ul.list
+                    for name, index in workflow_skills
+                      li(id="workflow_"+name, class="workflow-skill")
+                        .main-about_why_skills_skill
+                          svg(width="120",height="120",class="g-circles",id="workflow"+index)
+                            circle(r="50",cx="60",cy="60",stroke="#DDDAD3",fill="none",transform="rotate(-90 60 60)")
+                            circle(r="50",cx="60",cy="60",stroke="#76A365",class="sector",transform="rotate(-90 60 60)")
+                          .main-about_why_skills_skill_name #{name}
+
+    .footer
+      .footer_copyrights Алексей Лапицкий
+      .footer_comments создано с любовью в LoftSchool 2016
