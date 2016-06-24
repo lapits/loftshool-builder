@@ -2,18 +2,20 @@
 .wrapper {
 	display: inline-block;
 	min-height: 100%;
+	background-repeat: no-repeat;
+	width: 100%;
 }
 
 @media screen and (min-width: 1200px) {
 	.wrapper {
-		width: 1800px;
+		max-width: 1800px;
 		background-image: url("../img/back1800.jpg");
 	}
 }
 
 @media screen and (max-width: 320px) {
 	.wrapper {
-		width: 320px;
+		max-width: 320px;
 		background-image: url("../img/back320.jpg");
 	}
 }
