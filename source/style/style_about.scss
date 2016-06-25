@@ -1,6 +1,7 @@
 
 .bg-up {
 	background-position: 0 -110px;
+	/*background-size: 100% 10%;*/
 }
 
 .nav-poligons {
@@ -29,6 +30,22 @@
 	display: inline-block;
 	position: relative;
 	width: 50%;
+}
+
+.nav-arrow-down {
+	display: block;
+	position: absolute;
+	left: 50%; 
+}
+
+.top {
+	@media screen and (min-width: 1200px) {
+		max-width: 1800px;
+	};
+
+	@media screen and (max-width: 320px) {
+		width: 320px;
+	};
 }
 
 .main-about {
