@@ -4,6 +4,7 @@
 	min-height: 100%;
 	background-repeat: no-repeat;
 	width: 100%;
+	margin: 0 auto;
 }
 
 @media screen and (min-width: 1200px) {
@@ -43,7 +44,7 @@
 
 .main {
 	display: block;
-	border-radius: 5px;
+	border-radius: 0px;
 	
 	@media screen and (min-width: 1200px) {
 		width: 380px;
