@@ -9,15 +9,18 @@ html
     .wrapper.bg-up
       .header
         nav.top
-          nav.social
-            ul.social_list
-              for name,index in socials
-                li(id="social_list-item_"+name, class="social_list-item")
-                  a(href=socials_links[index],class="social_list-link")
-                    img(class="nav_social_svg", src=socials_img[index], alt="меню: "+name)
+          .top-left
+            nav.social
+              ul.social_list
+                for name,index in socials
+                  li(id="social_list-item_"+name, class="social_list-item")
+                    a(href=socials_links[index],class="social_list-link")
+                      img(class="nav_social_svg", src=socials_img[index], alt="меню: "+name)
 
-          nav.hamburger
-            img(class="nav_social_svg", src="assets/img/icons/hamburger.svg", alt="вызов подменю")
+          .top-right
+            nav.hamburger
+              a(href="#",class="hamburger_link")
+                img(class="hamburger_img", src="assets/img/icons/hamburger.svg", alt="вызов подменю")
                        
       .main
         .main_break
@@ -28,17 +31,18 @@ html
         .main_note Личный сайт веб разработчика
 
       .nav-poligons
-        .nav-arrow-down
-            svg(viewBox="0 0 27px 17px")
-              polyline(points="3,2  13,12  25,2" fill="none" stroke="rgba(255, 255, 255, 0.70)" stroke-width="6")
         .nav-poligons_left
           .pic-poligons
             svg(viewBox="0 0 900 175",preserveAspectRatio="none")
-              polygon(points="0,0  0,175  900,175  900,160",fill="#ebefe2")
+              polygon(points="0,0  0,175  900,175  900,155",fill="#ebefe2")
         .nav-poligons_right
           .pic-poligons
             svg(viewBox="0 0 900 175",preserveAspectRatio="none")
-              polygon(points="0,160  0,175  900,175  900,0",fill="#f3f4ee")
+              polygon(points="0,155  0,175  900,175  900,0",fill="#f3f4ee")
+        .nav-arrow-down
+          a(href="index.html")
+            svg(class="nav-arrow-down_svg", viewBox="0 0 27px 17px")
+              polyline(points="3,2  13,12  25,2" fill="none" stroke="rgba(255, 255, 255, 0.70)" stroke-width="6")
 
 
       .main-about
@@ -65,7 +69,7 @@ html
             svg.main-about_why_delim
               line(x1="0",y1="0",x2="89",y2="0") 
 
-            .main-about_content  Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
+            .main-about_content  Больше всего меня привлекает Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
             .main-about_why_skills
               ul.list
                 li.main-about_why_frontend Frontend
