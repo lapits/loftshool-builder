@@ -1,6 +1,3 @@
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIeuyLk6NEAHL4kNbjCSKb9eW3GGKU97M"
-src="https://maps.googleapis.com/maps/api/js"
-
 // When the window has finished loading create our google map below
 google.maps.event.addDomListener(window, 'load', init);
 
@@ -21,7 +18,7 @@ function init() {
 
     // Get the HTML DOM element that will contain your map 
     // We are using a div with id="map" seen below in the <body>
-    var mapElement = document.getElementById('map');
+    var mapElement = document.getElementById('maps');
 
     // Create the Google Map using our element and options defined above
     var map = new google.maps.Map(mapElement, mapOptions);
