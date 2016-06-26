@@ -16,6 +16,11 @@
 		background-image: url("../img/back1200.jpg");
 		}
 
+	@media screen and (max-width: 768px) {
+		max-width: 768px;
+		background-image: url("../img/back768.jpg");
+		}
+
 	@media screen and (max-width: 320px) {
 		max-width: 320px;
 		background-image: url("../img/back320.jpg");
@@ -58,6 +63,11 @@
 	@media screen and (max-width: 1200px) {
 		width: 300px;
 		min-height: 500px;
+	};
+
+	@media screen and (max-width: 768px) {
+		width: 300px;
+		min-height: 450px;
 	};
 
 	@media screen and (max-width: 320px) {
