@@ -1,10 +1,8 @@
-
-.wrapper {
-	display: inline-block;
-	min-height: 100%;
+body {
 	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 100%;
 	width: 100%;
-	margin: 0 auto;
 
 	@media screen and (min-width: 1200px) {
 		max-width: 1800px;
@@ -25,6 +23,14 @@
 		max-width: 320px;
 		background-image: url("../img/back320.jpg");
 		}
+}
+
+.wrapper {
+	display: inline-block;
+	min-height: 100%;
+	width: 100%;
+	margin: 0 auto;
+
 }
 
 
@@ -230,6 +236,7 @@
 
 .footer {
 	display: block;
+
 	@media screen and (min-width: 1200px) {
 		height: 73px;
 		margin-top: -73px;
