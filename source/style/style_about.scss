@@ -101,14 +101,43 @@
 	display: inline-block;
 	position: relative;
 	float: left;
-	width: 50%;
 	min-height: 100%;
 	background-color: #ebefe2;
+	@media screen and (min-width: 1200px) {
+		width: 50%;
+	};
+
+	@media screen and (max-width: 1200px) {
+		width: 50%;
+	};
+
+	@media screen and (max-width: 768px) {
+		width: 100%;
+	};
+
+	@media screen and (max-width: 320px) {
+		width: 100%;
+	};
 }
 
 .head {
 	float: left;
-	width: 50%;
+	@media screen and (min-width: 1200px) {
+		width: 50%;
+	};
+
+	@media screen and (max-width: 1200px) {
+		width: 50%;
+	};
+
+	@media screen and (max-width: 768px) {
+		width: 100%;
+	};
+
+	@media screen and (max-width: 320px) {
+		width: 100%;
+	};
+
 }
 
 .main-about_head_wrapper {
@@ -140,9 +169,23 @@
 .who {
 	display: inline-block;
 	float: left;
-	width: 50%;
 	min-height: 100%;
 	background-color: #ebefe2;
+	@media screen and (min-width: 1200px) {
+		width: 50%;
+	};
+
+	@media screen and (max-width: 1200px) {
+		width: 50%;
+	};
+
+	@media screen and (max-width: 768px) {
+		width: 100%;
+	};
+
+	@media screen and (max-width: 320px) {
+		width: 100%;
+	};
 }
 
 .main-about_who_h-big {
@@ -179,13 +222,27 @@
 
 
 .main-about_who_h-small {
-	display: inline-block;
 	position: relative;
 	max-width: 100%;
 	font-family: Webissimo-Regular , serif;
 	color: #566358;
 	font-size: 35px;
 	margin: 10px auto;
+	@media screen and (min-width: 1200px) {
+		display: inline-block;
+	};
+
+	@media screen and (max-width: 1200px) {
+		display: inline-block;
+	};
+
+	@media screen and (max-width: 768px) {
+		display: block;
+	};
+
+	@media screen and (max-width: 320px) {
+		display: block;
+	};
 }
 
 
@@ -194,9 +251,23 @@
 .why {
 	display: inline-block;
 	float: left;
-	width: 50%;
 	min-height: 100%;
 	background-color: #f3f4ee;
+	@media screen and (min-width: 1200px) {
+		width: 50%;
+	};
+
+	@media screen and (max-width: 1200px) {
+		width: 50%;
+	};
+
+	@media screen and (max-width: 768px) {
+		width: 100%;
+	};
+
+	@media screen and (max-width: 320px) {
+		width: 100%;
+	};
 }
 
 .main-about_why_delim {
