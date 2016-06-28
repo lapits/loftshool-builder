@@ -1,0 +1,109 @@
+doctype html
+html
+  include common/_head
+  body
+    <!--[if lt IE 7]>
+    <p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите его</a></p>
+    <![endif]-->
+
+    .wrapper.bg-up
+      .header
+        nav.top
+          .top-left
+            nav.social
+              ul.social_list
+                for name,index in socials
+                  li(id="social_list-item_"+name, class="social_list-item")
+                    a(href=socials_links[index],class="social_list-link")
+                      img(class="nav_social_svg", src=socials_img[index], alt="меню: "+name)
+
+          .top-right
+            nav.hamburger
+              a(href="#",class="hamburger_link")
+                img(class="hamburger_img", src="assets/img/icons/hamburger.svg", alt="вызов подменю")
+                       
+      .main
+        .main_break
+        .main_photo
+          img(src="assets/img/ava141.jpg", class="ava", alt="фото")
+
+        .main_name Алексей Лапицкий
+        .main_note Личный сайт веб разработчика
+
+      .nav-poligons
+        .nav-poligons_left
+          .pic-poligons
+            svg(viewBox="0 0 900 175",preserveAspectRatio="none")
+              polygon(points="0,0  0,175  900,175  900,155",fill="#ebefe2")
+        .nav-poligons_right
+          .pic-poligons
+            svg(viewBox="0 0 900 175",preserveAspectRatio="none")
+              polygon(points="0,155  0,175  900,175  900,0",fill="#f3f4ee")
+        .nav-arrow-down
+          a(href="index.html")
+            svg(class="nav-arrow-down_svg", viewBox="0 0 27px 17px")
+              polyline(points="3,2  13,12  25,2" fill="none" stroke="rgba(255, 255, 255, 0.70)" stroke-width="6")
+
+
+      .main-about
+        .about_wrapper
+          .head
+            .main-about_head_wrapper
+              h1.main-about_who_h-big ОБО МНЕ
+            svg.main-about_delim
+              line(x1="0",y1="0",x2="89",y2="0") 
+          .who
+            .main-about_photo-about 
+              img(src="assets/img/matrix_ava_437_390.jpg", class="main-about_photo-about_ava", alt="фото")
+            h1.main-about_who_h-small КТО Я
+            svg.main-about_who_delim
+              line(x1="0",y1="0",x2="89",y2="0") 
+
+            .main-about_content Я веб разработчик из Санкт-Петербурга. Мне 42 года. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты. Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
+
+        .why
+          .why_wrapper
+            h1.why_h-small 
+              p ЧЕМ Я МОГУ БЫТЬ
+              p ВАМ ПОЛЕЗЕН
+            svg.main-about_why_delim
+              line(x1="0",y1="0",x2="89",y2="0") 
+
+            .main-about_content  Больше всего меня привлекает Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
+            .main-about_why_skills
+              ul.list
+                li.main-about_why_frontend Frontend
+                  ul.list
+                    for name, index in frontend_skills
+                      li(id="frontend_"+name, class="frontend-skill")
+                        .main-about_why_skills_skill
+                          svg(class="g-circles",id="frontend"+index)
+                            circle(class="circle_experience")
+                            circle(class="sector circle_experience")
+                          .main-about_why_skills_skill_name #{name}
+                li.main-about_why_backend Backend
+                  ul.list
+                    for name, index in backend_skills
+                      li(id="backend_"+name, class="backend-skill")
+                        .main-about_why_skills_skill
+                          svg(class="g-circles",id="backend"+index)
+                            circle(class="circle_experience")
+                            circle(class="sector circle_experience")
+                          .main-about_why_skills_skill_name #{name}
+                li.main-about_why_workflow Workflow
+                  ul.list
+                    for name, index in workflow_skills
+                      li(id="workflow_"+name, class="workflow-skill")
+                        .main-about_why_skills_skill
+                          svg(class="g-circles",id="workflow"+index)
+                            circle(class="circle_experience")
+                            circle(class="sector circle_experience")
+                          .main-about_why_skills_skill_name #{name}
+      .maps#maps
+      .footer-nav 
+
+    .footer.footer-colored
+      .footer_copyrights Алексей Лапицкий
+      .footer_comments создано с любовью в LoftSchool 2016
+
+  script(src="assets/js/maps.js")
