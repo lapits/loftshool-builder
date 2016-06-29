@@ -12,10 +12,15 @@ html
           .top-left
             nav.social
               ul.social_list
-                for name,index in socials
-                  li(id="social_list-item_"+name, class="social_list-item")
-                    a(href=socials_links[index],class="social_list-link")
-                      img(class="nav_social_svg", src=socials_img[index], alt="меню: "+name)
+                each val, index in socials
+                  li(id="social_list-item_"+val, class="social_list-item")
+                    if val=="vk"
+                      a(href=socials_links[index],class="social_list-link")
+                        img(class="nav_social_svg vk-icon", src=socials_img[index], alt="меню: "+val)
+                    else
+                      a(href=socials_links[index],class="social_list-link")
+                        img(class="nav_social_svg", src=socials_img[index], alt="меню: "+val)
+
 
           .top-right
             nav.hamburger
@@ -51,7 +56,7 @@ html
             .main-about_head_wrapper
               h1.main-about_who_h-big ОБО МНЕ
             svg.main-about_delim
-              line(x1="0",y1="0",x2="89",y2="0") 
+              line.line-delimiter(x1="0",y1="0",x2="89",y2="0") 
           .who
             .main-about_photo-about 
               img(src="assets/img/matrix_ava_437_390.jpg", class="main-about_photo-about_ava", alt="фото")

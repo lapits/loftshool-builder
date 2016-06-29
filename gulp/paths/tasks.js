@@ -10,6 +10,7 @@ module.exports = [
   './gulp/tasks/css.foundation.js',
   './gulp/tasks/js.process.js',
   './gulp/tasks/js.lint.js',
+  './gulp/tasks/copy.scripts.js',
   './gulp/tasks/copy.image.js'
 ];
 

@@ -20,8 +20,12 @@ html
           ul.social_list
             for name,index in socials
               li(id="social_list-item_"+name, class="social_list-item")
-                a(href=socials_links[index],class="social_list-link")
-                  img(class="nav_social_svg", src=socials_img[index], alt="меню: "+name)
+                if val=="vk"
+                  a(href=socials_links[index],class="social_list-link")
+                    img(class="nav_social_svg vk-icon", src=socials_img[index], alt="меню: "+val)
+                else
+                  a(href=socials_links[index],class="social_list-link")
+                    img(class="nav_social_svg", src=socials_img[index], alt="меню: "+val)
         nav.nav
           ul.nav_list
             for name,index in navs

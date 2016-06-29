@@ -7,6 +7,7 @@
 .nav-poligons {
 	position: relative;
 	width: 100%;
+	font-size: 0;
 	
 	@media screen and (min-width: 1200px) {
 		min-width: 100%;
@@ -73,11 +74,41 @@
 .top-left {
 	display: inline-block;
 	float: left;
+	@media screen and (min-width: 1200px) {
+			margin: 28px 0 0 28px;
+		};
+
+		@media screen and (max-width: 1200px) {
+			margin: 28px 0 0 28px;
+		};
+
+		@media screen and (max-width: 768px) {
+			margin: 28px 0 0 28px;
+		};
+
+		@media screen and (max-width: 320px) {
+			margin: 11px 0 0 11px;
+		};
 }
 
 .top-right {
 	display: inline-block;
 	float: right;
+	@media screen and (min-width: 1200px) {
+			margin: 30px 30px 0 0;
+		};
+
+		@media screen and (max-width: 1200px) {
+			margin: 30px 30px 0 0;
+		};
+
+		@media screen and (max-width: 768px) {
+			margin: 30px 30px 0 0;
+		};
+
+		@media screen and (max-width: 320px) {
+			margin: 11px 11px 0 0;
+		};
 }
 
 

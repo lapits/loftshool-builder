@@ -27,6 +27,7 @@ $.gulp.task('default', $.gulp.series(
     'jade',
     'js.foundation',
     'js.process',
+    'copy.scripts',
     'copy.image',
     'css.foundation'
   ),
