@@ -39,24 +39,42 @@ html
         .nav-poligons_left
           .pic-poligons
             svg(viewBox="0 0 900 175",preserveAspectRatio="none")
-              polygon(points="0,0  0,175  900,175  900,155",fill="#ebefe2")
+              polygon(points="0,0  0,175  900,175  900,155",fill="#f8f9f5")
         .nav-poligons_right
           .pic-poligons
             svg(viewBox="0 0 900 175",preserveAspectRatio="none")
-              polygon(points="0,155  0,175  900,175  900,0",fill="#f3f4ee")
+              polygon(points="0,155  0,175  900,175  900,0",fill="#f8f9f5")
         .nav-arrow-down
           a(href="index.html")
-            svg(class="nav-arrow-down_svg", viewBox="0 0 27px 17px")
+            svg(class="nav-arrow-down_svg", viewBox="0 0 27 17")
               polyline(points="3,2  13,12  25,2" fill="none" stroke="rgba(255, 255, 255, 0.70)" stroke-width="6")
 
 
       .main-works
-        .works-wrapper
-          .main-works_wrapper_head
-            .main-works_head_wrapper
-              h1.main-h-big МОИ РАБОТЫ
-            svg.main-delim
-              line.line-delimiter(x1="0",y1="0",x2="89",y2="0") 
+        .main-works_head_wrapper
+          h1.main-h-big.icon_bg_works МОИ РАБОТЫ
+          svg.main-delim
+            line.line-delimiter(x1="0",y1="0",x2="89",y2="0") 
+        .main-works_examples
+          .main-works_examples-left
+            .main-works_examples-left_header
+            .main-works_examples-left_delim
+            .main-works_examples-left_tech
+            .main-works_examples-left_button
+          .main-works_examples-right
+            .main-works_examples-right_view
+            .main-works_examples-right_up-down
+        .main-works_about
+          .main-works_opinion
+          .main-works_feedback
+            .main-works_feedback_head
+            .main-works_feedback_delim
+            .main-works_feedback_name
+            .main-works_feedback_email
+            .main-works_feedback_msg
+            .main-works_feedback_buttons
+              .main-works_feedback_left-btn
+              .main-works_feedback_right-btn
 
 
       //- .footer-nav 
@@ -65,4 +83,3 @@ html
       .footer_copyrights Алексей Лапицкий
       .footer_comments создано с любовью в LoftSchool 2016
 
-  script(src="assets/js/maps.js")
