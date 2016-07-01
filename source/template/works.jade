@@ -69,16 +69,20 @@ html
             h1.main-h-big.icon_bg_about.main-works_opinion_h ЧТО ОБО МНЕ ГОВОРЯТ
             svg.main-delim
               line.line-delimiter(x1="0",y1="0",x2="89",y2="0") 
-            .main-works_opinion_left
-              .main-works_opinion_photo
-              .main-works_opinion_text
-              .main-works_opinion_person
+            .main-works_opinion-wrapper
+              .main-works_opinion_left
+                .main-works_opinion_photo
+                  img(src="assets/img/kovald.png", class="opinion_photo", alt="фото преподавателя")
+                .main-works_opinion_text Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+                .main-works_opinion_person Ковальчук Дмитрий
+                .main-works_opinion_person-status — основатель Loftschool
 
-            .main-works_opinion_right
-              .main-works_opinion_photo
-              .main-works_opinion_text
-              .main-works_opinion_person
-
+              .main-works_opinion_right
+                .main-works_opinion_photo
+                  img(src="assets/img/zarz.png", class="opinion_photo", alt="фото преподавателя")
+                .main-works_opinion_text Этот код выдержет любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
+                .main-works_opinion_person Зар Захаров
+                .main-works_opinion_person-status — главный преподаватель
 
           .main-works_feedback
             .main-works_feedback_head СВЯЗАТЬСЯ СО МНОЙ

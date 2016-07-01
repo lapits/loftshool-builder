@@ -4,6 +4,11 @@
 	/*background-size: 100% 10%;*/
 }
 
+.opinion_photo {
+	border-radius: 50%;
+}
+
+
 .nav-poligons {
 	position: relative;
 	width: 100%;
@@ -500,7 +505,6 @@
 	min-width: 100%;
 	min-height: 100%;
 	text-align: center;
-
 }
 
 .main-works_head_wrapper {
@@ -533,6 +537,7 @@
 
 .main-works_examples {
 	overflow: hidden;
+	font-size: 0;
 }
 
 .main-works_examples-left {
@@ -609,8 +614,6 @@
 	@media screen and (max-width: 320px) {
 		width: 249px;
 	};
-
-
 }
 
 .icon_bg_works {
@@ -627,3 +630,88 @@
 	
 }
 
+.main-works_about {
+	background: url("../img/works_bg_1800.jpg") no-repeat;
+	
+	@media screen and (min-width: 1200px) {
+		min-height: 1355px;
+	};
+
+	@media screen and (max-width: 1200px) {
+		min-height: 1353px;
+	};
+
+	@media screen and (max-width: 768px) {
+		min-height: 1306px;
+	};
+
+	@media screen and (max-width: 320px) {
+		background: url("../img/works_bg_iphone.jpg") no-repeat;
+		min-height: 1490px;
+	};
+
+}
+
+.main-works_opinion-wrapper {
+	@media screen and (min-width: 1200px) {
+		width: 800px;
+	};
+
+	@media screen and (max-width: 1200px) {
+		width: 800px;
+	};
+
+	@media screen and (max-width: 768px) {
+		width: 100%;
+	};
+
+	@media screen and (max-width: 320px) {
+		width: 100%;
+	};
+
+}
+
+.main-works_opinion_left {
+	float: left;
+	display: inline-block;
+	position: relative;
+	max-height: 100%;
+
+	@media screen and (min-width: 1200px) {
+		width: 50%;
+	};
+
+	@media screen and (max-width: 1200px) {
+		width: 50%;
+	};
+
+	@media screen and (max-width: 768px) {
+		width: 50%;
+	};
+
+	@media screen and (max-width: 320px) {
+		width: 100%;
+	};
+}
+
+.main-works_opinion_right {
+	float: right;
+	display: inline-block;
+	position: relative;
+	max-height: 100%;
+	@media screen and (min-width: 1200px) {
+		width: 50%;
+	};
+
+	@media screen and (max-width: 1200px) {
+		width: 50%;
+	};
+
+	@media screen and (max-width: 768px) {
+		width: 50%;
+	};
+
+	@media screen and (max-width: 320px) {
+		width: 100%;
+	};
+}
