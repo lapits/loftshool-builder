@@ -12,7 +12,19 @@
 @font-face {
   font-family: Roboto-Medium;
   src: url("../img/fonts/Roboto-Medium.ttf");
-  font-style: medium;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Roboto-Italic;
+  src: url("../img/fonts/Roboto-Italic.ttf");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Roboto-BoldItalic;
+  src: url("../img/fonts/Roboto-BoldItalic.ttf");
+  font-style: italic;
 }
 
 @font-face {

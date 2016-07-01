@@ -86,16 +86,18 @@ html
 
           .main-works_feedback
             .main-works_feedback_head СВЯЗАТЬСЯ СО МНОЙ
-            .main-works_feedback_delim
-            .main-works_feedback_name
-            .main-works_feedback_email
-            .main-works_feedback_msg
-            .main-works_feedback_buttons
-              .main-works_feedback_left-btn ОТПРАВИТЬ
-              .main-works_feedback_right-btn ОЧИСТИТЬ
+            svg.main-delim
+              line.line-delimiter(x1="0",y1="0",x2="89",y2="0") 
+            form.main-works_feedback-form
+              input.main-works_feedback_name.input.input-feedback-field(placeholder="Имя")
+              input.main-works_feedback_email.input.input-feedback-field(placeholder="Email")
+              input.main-works_feedback_msg(placeholder="Ваше сообщение")
+              .main-works_feedback_buttons
+                button.main-works_feedback_btn.btn-border-bottom-left ОТПРАВИТЬ
+                button.main-works_feedback_btn.btn-border-bottom-right ОЧИСТИТЬ
 
 
-      //- .footer-nav 
+        //- .footer-nav.footer-up 
 
     .footer.footer-colored
       .footer_copyrights Алексей Лапицкий
