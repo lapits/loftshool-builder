@@ -246,6 +246,7 @@
 	position: relative;
 	max-width: 100%;
 	font-family: Webissimo-Regular , serif;
+	font-weight: normal;
 	margin: 0;
 	height: 100%;
 	color: #373e42;
@@ -556,6 +557,7 @@
 	display: inline-block;
 	position: relative;
 	background-color: #E9EDE0;
+	text-align: center;
 
 	@media screen and (min-width: 1200px) {
 		width: 50%;
@@ -576,9 +578,8 @@
 		width: 100%;
 		min-height: 219px;
 	};
-
-
 }
+
 
 .main-works_examples-right {
 	font-size: 1rem;
@@ -607,6 +608,14 @@
 	};
 }
 
+.examples-left-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
 .main-works_examples-left_header {
 	font-family: Webissimo-Regular, serif;
 	font-weight: normal;
@@ -633,6 +642,57 @@
 		font-size: 1.3125rem;
 		line-height: 1.3125rem;
 	};
+}
+
+.main-works_examples-left_tech {
+	font-size: 1em;
+	font-family: Roboto-Medium, serif;
+	color:  #4e8839;
+	font-style: normal;
+	line-height: 1.625em;
+	text-align: center;
+}
+
+.main-works-view-btn {
+  color: #ffffff;
+	font-family: Roboto-Medium, serif;
+  font-size: 1em;
+  font-weight: normal;
+  border: none;
+
+  background: #669933;
+  padding: 0.625em 1.25em 0.625em 1.25em;
+  text-decoration: none;
+  
+	@media screen and (min-width: 1200px) {
+		width: 200px;
+		height: 45px;
+		border-radius: 21px;
+	};
+
+	@media screen and (max-width: 1200px) {
+		width: 200px;
+		height: 45px;
+		border-radius: 21px;
+	};
+
+	@media screen and (max-width: 768px) {
+		width: 200px;
+		height: 45px;
+		border-radius: 21px;
+	};
+
+	@media screen and (max-width: 320px) {
+		max-width: 185px;
+		height: 40px;
+		border-radius: 18px;
+	};
+
+}
+
+.main-works-view-btn:hover {
+  background: #6c9c5a;
+  text-decoration: none;
 }
 
 .main-works_opinion_h {
