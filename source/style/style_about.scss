@@ -52,10 +52,23 @@
 	max-height: 100%;
 }
 
-.nav-arrow-down {
+.nav-arrow {
 	display: block;
 	position: absolute;
 	max-height: 100%;
+}
+
+.nav-arrow_svg {
+	width: 27px;
+	height: 17px;
+
+}
+
+.nav-arrow:hover {
+	cursor: pointer;
+}
+
+.arrow-down {
 	left: 50%;
 	transform: translate(-13px);
 	
@@ -76,16 +89,11 @@
 	};
 }
 
-.nav-arrow-down_svg {
-	width: 27px;
-	height: 17px;
-
+.arrow-up {
+	left: 50%;
+	transform: translate(-13px);
+	bottom: 200px;
 }
-
-.nav-arrow-down:hover {
-	cursor: pointer;
-}
-
 
 .top-left {
 	display: inline-block;
@@ -743,9 +751,26 @@
 }
 
 .main-works_feedback_head {
-	font-size: 2.19em;
 	font-family: Webissimo-Regular, serif;
-	line-height: 2.19em;
+	@media screen and (min-width: 1200px) {
+		font-size: 2.19em;
+		line-height: 2.19em;
+	};
+
+	@media screen and (max-width: 1200px) {
+		font-size: 2.19em;
+		line-height: 2.19em;
+	};
+
+	@media screen and (max-width: 768px) {
+		font-size: 2.19em;
+		line-height: 2.19em;
+	};
+
+	@media screen and (max-width: 320px) {
+		font-size: 1.25em;
+		line-height: 1.25em;
+	};
 }
 
 .main-works_opinion_text {
@@ -775,7 +800,7 @@
 }
 
 .input-feedback-field {
-	background-color: rgba(255,255,255,0.85);
+	background-color: rgba(255,255,255,0.90);
   border-radius: 1.5em;
   padding: 0 0 0 1.375em;
 	font-size: 1em;
@@ -793,13 +818,13 @@
 
 	@media screen and (max-width: 768px) {
 	  height: 2.8125em;
-		width: 19.3125px;
+		width: 19.3125em;
 	};
 
 
 	@media screen and (max-width: 320px) {
 		height: 2.5em;
-		width: 16.1875px;
+		width: 16.1875em;
 	};
 }
 
@@ -820,11 +845,11 @@
 	};
 
 	@media screen and (max-width: 768px) {
-		width: 19.3125px;
+		width: 19.3125em;
 	};
 
 	@media screen and (max-width: 320px) {
-		width: 16.1875px;
+		width: 16.1875em;
 	};
 
 }
