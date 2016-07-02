@@ -248,8 +248,10 @@
 	font-family: Webissimo-Regular , serif;
 	margin: 0;
 	height: 100%;
+	color: #373e42;
 	@media screen and (min-width: 1200px) {
-		font-size: 4em;
+		font-size: 3.93em;
+
 	};
 
 	@media screen and (max-width: 1200px) {
@@ -606,21 +608,25 @@
 }
 
 .main-works_opinion_h {
-	margin: 0 auto;
+	margin: auto;
 	@media screen and (min-width: 1200px) {
 		width: 499px;
+		margin-bottom: 16px;
 	};
 
 	@media screen and (max-width: 1200px) {
 		width: 499px;
+		margin-bottom: 16px;
 	};
 
 	@media screen and (max-width: 768px) {
 		width: 404px;
+		margin-bottom: 0;
 	};
 
 	@media screen and (max-width: 320px) {
 		width: 249px;
+		margin-bottom: 28px;
 	};
 }
 
@@ -660,6 +666,24 @@
 
 }
 
+.main-works_opinion {
+	@media screen and (min-width: 1200px) {
+		padding: 32px 0 0 0;
+	};
+
+	@media screen and (max-width: 1200px) {
+		padding: 32px 0 0 0;
+	};
+
+	@media screen and (max-width: 768px) {
+		padding: 20px 0 0 0;
+	};
+
+	@media screen and (max-width: 320px) {
+		padding: 21px 0 0 0;
+	};
+}
+
 .main-works_opinion-wrapper {
 	overflow: hidden;
 	margin: auto; 
@@ -689,19 +713,24 @@
 
 	@media screen and (min-width: 1200px) {
 		width: 50%;
+		margin-top: 30px;
 	};
 
 	@media screen and (max-width: 1200px) {
 		width: 50%;
+		margin-top: 30px;
 	};
 
 	@media screen and (max-width: 768px) {
 		width: 50%;
+		margin-top: 30px;
 	};
 
-	@media screen and (max-width: 320px) {
+	@media screen and (max-width: 600px) {
 		width: 100%;
+		margin-top: 20px;
 	};
+
 }
 
 .main-works_opinion_right {
@@ -711,19 +740,24 @@
 	max-height: 100%;
 	@media screen and (min-width: 1200px) {
 		width: 50%;
+		margin-top: 30px;
 	};
 
 	@media screen and (max-width: 1200px) {
 		width: 50%;
+		margin-top: 30px;
 	};
 
 	@media screen and (max-width: 768px) {
 		width: 50%;
+		margin-top: 30px;
 	};
 
-	@media screen and (max-width: 320px) {
+	@media screen and (max-width: 600px) {
 		width: 100%;
+		margin-top: 20px;
 	};
+
 }
 
 .main-works_feedback {
@@ -733,18 +767,22 @@
 	min-height: 461px; 
 
 	@media screen and (min-width: 1200px) {
+		margin-top: 68px;
 		width: 380px;
 	};
 
 	@media screen and (max-width: 1200px) {
+		margin-top: 68px;
 		width: 380px;
 	};
 
 	@media screen and (max-width: 768px) {
+		margin-top: 48px;
 		width: 349px;
 	};
 
 	@media screen and (max-width: 320px) {
+		margin-top: 40px;
 		width: 100%;
 		min-height: 423px; 
 	};
@@ -752,6 +790,8 @@
 
 .main-works_feedback_head {
 	font-family: Webissimo-Regular, serif;
+	color: #000;
+
 	@media screen and (min-width: 1200px) {
 		font-size: 2.19em;
 		line-height: 2.19em;
@@ -779,6 +819,8 @@
 	color:  rgba(93, 90, 85, 1);
 	font-style: italic;
 	line-height: 1.625em;
+	padding: 0 12px 0 12px;
+	margin-bottom: 20px;
 }
 
 .main-works_opinion_person {
