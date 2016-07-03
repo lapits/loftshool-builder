@@ -622,35 +622,61 @@
 	color: #666;
 	text-transform: uppercase;
 	height: 100%;
+	margin: 10px auto;
 
 	@media screen and (min-width: 1200px) {
 		font-size: 2.1875rem;
 		line-height: 2.1875rem;
+		margin-bottom: 27px;
 	};
 
 	@media screen and (max-width: 1200px) {
 		font-size: 2.1875rem;
 		line-height: 2.1875rem;
+		margin-bottom: 27px;
 	};
 
 	@media screen and (max-width: 768px) {
 		font-size: 1.875rem;
 		line-height: 1.875rem;
+		margin-bottom: 17px;
 	};
 
 	@media screen and (max-width: 320px) {
 		font-size: 1.3125rem;
 		line-height: 1.3125rem;
+		margin-bottom: 18px;
 	};
 }
 
 .main-works_examples-left_tech {
-	font-size: 1em;
 	font-family: Roboto-Medium, serif;
 	color:  #4e8839;
 	font-style: normal;
-	line-height: 1.625em;
 	text-align: center;
+	@media screen and (min-width: 1200px) {
+		margin: 22px auto 50px;
+		font-size: 1em;
+		line-height: 1em;
+	};
+
+	@media screen and (max-width: 1200px) {
+		margin: 24px auto 50px;
+		font-size: 1em;
+		line-height: 1em;
+	};
+
+	@media screen and (max-width: 768px) {
+		margin: 18px auto 30px;
+		font-size: 1em;
+		line-height: 1em;
+	};
+
+	@media screen and (max-width: 320px) {
+		margin: 19px auto 8px;
+		font-size: 0.875em;
+		line-height: 0.875em;
+	};
 }
 
 .main-works-view-btn {
@@ -659,6 +685,7 @@
   font-size: 1em;
   font-weight: normal;
   border: none;
+  margin: 10px auto 10px;
 
   background: #669933;
   padding: 0.625em 1.25em 0.625em 1.25em;
