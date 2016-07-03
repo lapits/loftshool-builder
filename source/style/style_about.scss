@@ -608,6 +608,79 @@
 	};
 }
 
+.main-works_examples-right_view {
+	@media screen and (min-width: 1200px) {
+		max-width: 605px;
+	};
+
+	@media screen and (max-width: 1200px) {
+		max-width: 450px
+	};
+
+	@media screen and (max-width: 768px) {
+		max-width: 562px
+	};
+
+	@media screen and (max-width: 320px) {
+		max-width: 236px
+	};
+}
+
+.work-example-big {
+	width: 100%;
+}
+
+.main-works_examples-right_up-down {
+	@include clearfix;
+}
+
+.main-works_examples-right_up-down_left {
+	display: inline-block;
+	float: left;
+	width: 50%;
+	@media screen and (min-width: 1200px) {
+		max-width: 348px;
+	};
+
+	@media screen and (max-width: 1200px) {
+		max-width: 280px
+	};
+
+	@media screen and (max-width: 768px) {
+		max-width: 280px
+	};
+
+	@media screen and (max-width: 320px) {
+		max-width: 116px
+	};
+}
+
+.main-works_examples-right_up-down_right {
+	display: inline-block;
+	float: right;
+	width: 50%;
+	@media screen and (min-width: 1200px) {
+		max-width: 348px;
+	};
+
+	@media screen and (max-width: 1200px) {
+		max-width: 280px
+	};
+
+	@media screen and (max-width: 768px) {
+		max-width: 280px
+	};
+
+	@media screen and (max-width: 320px) {
+		max-width: 116px
+	};
+}
+
+.work-example-small {
+	width: 100%;
+}
+
+
 .examples-left-wrapper {
   position: absolute;
   top: 50%;
