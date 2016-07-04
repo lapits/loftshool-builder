@@ -5,6 +5,10 @@ html
     <!--[if lt IE 7]>
     <p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите его</a></p>
     <![endif]-->
+    svg
+      symbol#icon-works(viewBox="0 0 505.1 165")
+        path
+          d=""
 
     .wrapper.bg-up
       .header
@@ -51,7 +55,9 @@ html
 
       .main-works
         .main-works_head_wrapper
-          h1.main-h-big.icon_bg_works МОИ РАБОТЫ
+          svg.icon
+            use(xlink:href="#icon-works")
+          h1.main-h-big МОИ РАБОТЫ
           svg.main-delim
             line.line-delimiter(x1="0",y1="0",x2="89",y2="0") 
         h1.main-works_examples

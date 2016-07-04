@@ -819,11 +819,10 @@
 }
 
 .icon_bg_works {
-	background: url("../img/works_header.svg") no-repeat;
-	background-size: contain;
-	background-position: center;
+	width: 506px;
+	height: 165px;
+	/*fill: rgba(125,125,125,1);*/
 }
-
 
 .icon_bg_about {
 	background: url("../img/about_header.svg") no-repeat;
