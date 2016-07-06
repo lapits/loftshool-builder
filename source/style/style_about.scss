@@ -145,10 +145,40 @@
 
 }
 
+.main-h-big {
+	display: block;
+	max-width: 100%;
+	font-family: Webissimo-Regular , serif;
+	font-weight: normal;
+	margin: auto;
+	color: #373e42;
+	@media screen and (min-width: 1200px) {
+		font-size: 3.93em;
+	};
+
+	@media screen and (max-width: 1200px) {
+		font-size: 4em;
+	};
+
+	@media screen and (max-width: 768px) {
+		width: 272px;
+		font-size: 2.9375em;
+	};
+
+	@media screen and (max-width: 320px) {
+		margin-top: 20px;
+		margin-bottom: 12px;
+		width: 194px;
+		font-size: 2em;
+	};
+}
+
+
 .main-about_content {
 	font-family: Roboto-Regular , serif;
+	color: #666666;
 	font-size: 16px;
-	margin: 10px 0 20px 0;
+	margin: 10px 10px 20px 10px;
 	text-align: left;	
 }
 
@@ -182,7 +212,7 @@
 	};
 
 	@media screen and (max-width: 1200px) {
-		width: 50%;
+		width: 100%;
 	};
 
 	@media screen and (max-width: 768px) {
@@ -203,7 +233,24 @@
 	height: 100%;
 	margin-top: -50px;
 	line-height: 125px;
-	margin: 0;
+}
+
+.main-about_h {
+	position: relative;
+
+	@media screen and (min-width: 1200px) {
+		margin-top: -20px;
+	};
+
+	@media screen and (max-width: 1200px) {
+	};
+
+	@media screen and (max-width: 768px) {
+		margin-top: 25px;
+	};
+
+	@media screen and (max-width: 320px) {
+	};
 }
 
 
@@ -221,15 +268,17 @@
 
 .who {
 	display: inline-block;
-	float: left;
+	float: right;
 	min-height: 100%;
 	background-color: #ebefe2;
+	margin-bottom: 37px;
 	@media screen and (min-width: 1200px) {
 		width: 50%;
 	};
 
 	@media screen and (max-width: 1200px) {
-		width: 50%;
+		width: 100%;
+		
 	};
 
 	@media screen and (max-width: 768px) {
@@ -238,40 +287,14 @@
 
 	@media screen and (max-width: 320px) {
 		width: 100%;
-	};
-}
-
-.main-h-big {
-	display: block;
-	position: absolute;
-  transform: translate(-50%, -50%);
-	max-width: 100%;
-	font-family: Webissimo-Regular , serif;
-	font-weight: normal;
-	margin: 0;
-	color: #373e42;
-	@media screen and (min-width: 1200px) {
-		font-size: 3.93em;
-	};
-
-	@media screen and (max-width: 1200px) {
-		font-size: 4em;
-	};
-
-	@media screen and (max-width: 768px) {
-		width: 272px;
-		font-size: 2.9375em;
-	};
-
-	@media screen and (max-width: 320px) {
-		width: 194px;
-		font-size: 2em;
 	};
 }
 
 .main-works_header-examples {
+	position: absolute;
   top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 
@@ -293,16 +316,32 @@
 }
 
 .main-works_head_opinion_delim {
-  top: 17%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-	margin: 8px auto;
+	position: relative;
+	@media screen and (min-width: 1200px) {
+		margin: 35px auto 8px;
+	};
+
+	@media screen and (max-width: 1200px) {
+		margin: 50px auto 8px;
+	};
+
+	@media screen and (max-width: 768px) {
+		margin: 20px auto 8px;
+	};
+
+	@media screen and (max-width: 320px) {
+		margin: 20px auto 8px;
+	};
 }
 
+.main-about_head_delim {
+	position: relative;
+	margin: 8px auto 15px;
+}
+
+
 .main-works_examples-left_delim {
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+	position: relative;
 	margin: 8px auto;
 }
 
@@ -315,9 +354,23 @@
 
 .main-about_photo-about {
 	display: inline-block;
-	max-width: 437px;
 	max-height: 390px;
 	margin: 0px auto 22px;
+	@media screen and (min-width: 1200px) {
+		max-width: 437px;
+	};
+
+	@media screen and (max-width: 1200px) {
+		width: 61.5%;
+	};
+
+	@media screen and (max-width: 768px) {
+		width: 61.5vw;
+	};
+
+	@media screen and (max-width: 320px) {
+		width: 100%;
+	};
 }
 
 .main-about_photo-about_ava {
@@ -332,24 +385,31 @@
 	color: #566358;
 	font-size: 35px;
 	margin: 10px auto;
+	display: block;
 	@media screen and (min-width: 1200px) {
-		display: inline-block;
 	};
 
 	@media screen and (max-width: 1200px) {
-		display: inline-block;
 	};
 
 	@media screen and (max-width: 768px) {
-		display: block;
 	};
 
 	@media screen and (max-width: 320px) {
-		display: block;
 	};
 }
 
 
+.main-about_who_delim {
+	display: block;
+	position: relative;
+	stroke: #373e42;
+	stroke-width: 3px;
+	height: 3px;
+	width: 89px;
+	max-width: 100%;
+	margin: 18px auto;
+}
 
 
 .why {
@@ -404,24 +464,30 @@
 }
 
 .main-about_why_frontend {
+	display: block;
 	font-family: Roboto-Medium, serif;
 	font-size: 28px;
+	width: 100%;
 	margin: 0;
 	text-align: left;	
 	color: #566358;
 }
 
 .main-about_why_backend {
+	display: block;
 	font-family: Roboto-Medium, serif;
 	font-size: 28px;
+	width: 100%;
 	margin: 0;
 	text-align: left;	
 	color: #566358;
 }
 
 .main-about_why_workflow {
+	display: block;
 	font-family: Roboto-Medium, serif;
 	font-size: 28px;
+	width: 100%;
 	margin: 0;
 	text-align: left;	
 	color: #566358;
@@ -733,7 +799,7 @@
 		font-size: 2.1875rem;
 		line-height: 2.1875rem;
 		margin-bottom: 27px;
-		width: 30vw;
+		width: 26vw;
 	};
 
 	@media screen and (max-width: 1200px) {
@@ -747,7 +813,7 @@
 		font-size: 1.875rem;
 		line-height: 1.875rem;
 		margin-bottom: 17px;
-		width: 480px;
+		width: 90vw;
 	};
 
 	@media screen and (max-width: 480px) {
@@ -833,8 +899,10 @@
 
 .main-works_opinion_h {
 	margin: auto;
+	position: absolute;
   top: 10%;
   left: 50%;
+  transform: translate(-50%, -50%);
 	@media screen and (min-width: 1200px) {
 		width: 499px;
 		margin-bottom: 16px;
@@ -846,6 +914,7 @@
 	};
 
 	@media screen and (max-width: 768px) {
+		top: 7%;
 		width: 404px;
 		margin-bottom: 0;
 	};
@@ -853,6 +922,7 @@
 	@media screen and (max-width: 320px) {
 		width: 249px;
 		margin-bottom: 28px;
+		top: 4%;
 	};
 }
 
@@ -881,10 +951,39 @@
 	};
 }
 
+.main_icon-about svg {
+	position: absolute;
+	left: 0;
+	@media screen and (min-width: 1200px) {
+		top: -50px;
+		width: 50%;
+		height: 115px;
+	};
+
+	@media screen and (max-width: 1200px) {
+		top: -30px;
+		width: 100%;
+		height: 115px;
+	};
+
+	@media screen and (max-width: 768px) {
+		top: 9px;
+		width: 100%;
+		height: 85px;
+	};
+
+	@media screen and (max-width: 320px) {
+		top: 5px;
+		width: 100%;
+		height: 65px;
+	};
+}
+
 
 .main-works_about {
 	position: relative;
 	background: url("../img/works_bg_1800.jpg") no-repeat;
+	background-size: cover;
 	
 	@media screen and (min-width: 1200px) {
 		min-height: 1355px;
@@ -925,7 +1024,7 @@
 
 .main-works_opinion-wrapper {
 	overflow: hidden;
-	margin: 38px auto 0; 
+	margin: 5px auto 0; 
 	@media screen and (min-width: 1200px) {
 		width: 800px;
 	};
@@ -952,22 +1051,22 @@
 
 	@media screen and (min-width: 1200px) {
 		width: 50%;
-		margin-top: 30px;
+		margin-top: 20px;
 	};
 
 	@media screen and (max-width: 1200px) {
 		width: 50%;
-		margin-top: 30px;
+		margin-top: 20px;
 	};
 
 	@media screen and (max-width: 768px) {
 		width: 50%;
-		margin-top: 30px;
+		margin-top: 28px;
 	};
 
 	@media screen and (max-width: 600px) {
 		width: 100%;
-		margin-top: 20px;
+		margin-top: 12px;
 	};
 
 }
@@ -979,22 +1078,22 @@
 	max-height: 100%;
 	@media screen and (min-width: 1200px) {
 		width: 50%;
-		margin-top: 30px;
+		margin-top: 20px;
 	};
 
 	@media screen and (max-width: 1200px) {
 		width: 50%;
-		margin-top: 30px;
+		margin-top: 20px;
 	};
 
 	@media screen and (max-width: 768px) {
 		width: 50%;
-		margin-top: 30px;
+		margin-top: 28px;
 	};
 
 	@media screen and (max-width: 600px) {
 		width: 100%;
-		margin-top: 20px;
+		margin-top: 12px;
 	};
 
 }

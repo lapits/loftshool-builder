@@ -9,10 +9,6 @@ html
     <!--[if lt IE 7]>
     <p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите его</a></p>
     <![endif]-->
-    //- svg
-    //-   symbol#icon-works(viewBox="0 0 505.1 165")
-    //-     path
-    //-       d=""
 
     .wrapper.bg-up
       .header
@@ -59,9 +55,6 @@ html
 
       .main-works
         .main-works_head_wrapper
-          //- svg.icon
-          //-   use(xlink:href="#icon-works")
-          //- +anysvg ("works_header", "icon-works")
           .icon-works
             include ../images/works_header.svg
           h1.main-h-big.main-works_header-examples МОИ РАБОТЫ
@@ -71,8 +64,8 @@ html
           .main-works_examples-left
             .examples-left-wrapper
               .main-works_examples-left_header Сайт школы онлайн Образования
-                svg.main-delim.main-works_examples-left_delim
-                  line.line-delimiter(x1="0",y1="0",x2="89",y2="0") 
+              svg.main-delim.main-works_examples-left_delim
+                line.line-delimiter(x1="0",y1="0",x2="89",y2="0") 
               .main-works_examples-left_tech HTML , CSS, JAVASCRIPT
               .main-works_examples-left_button
                 button.main-works-view-btn Посмотреть сайт
