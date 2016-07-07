@@ -138,6 +138,7 @@
 
 .main-about {
 	@include clearfix;
+	display: table-row;
 	position: relative;
 	min-width: 100%;
 	min-height: 650px;
@@ -183,26 +184,31 @@
 }
 
 .about_wrapper {
-	display: inline-block;
 	position: relative;
-	float: left;
-	min-height: 100%;
+	height: 100%;
 	background-color: #ebefe2;
 	@media screen and (min-width: 1200px) {
+		display: table-cell;
 		width: 50%;
 	};
 
 	@media screen and (max-width: 1200px) {
+		display: table-cell;
 		width: 50%;
 	};
 
 	@media screen and (max-width: 768px) {
+		display: block;
+		float: left;
 		width: 100%;
 	};
 
 	@media screen and (max-width: 320px) {
+		display: block;
+		float: left;
 		width: 100%;
 	};
+
 }
 
 .head {
@@ -289,9 +295,6 @@
 		width: 100%;
 	};
 
-	&:after {
-    content: "";
-	}
 }
 
 .main-works_header-examples {
@@ -418,23 +421,28 @@
 
 
 .why {
-	display: inline-block;
-	float: left;
-	min-height: 100%;
+	height: 100%;
+	vertical-align: top;
 	background-color: #f3f4ee;
 	@media screen and (min-width: 1200px) {
+		display: table-cell;
 		width: 50%;
 	};
 
 	@media screen and (max-width: 1200px) {
+		display: table-cell;
 		width: 50%;
 	};
 
 	@media screen and (max-width: 768px) {
+		display: block;
+		float: right;
 		width: 100%;
 	};
 
 	@media screen and (max-width: 320px) {
+		display: block;
+		float: right;
 		width: 100%;
 	};
 }
@@ -451,7 +459,7 @@
 }
 
 .why_wrapper {
-	margin: 40px auto;
+	margin: 0 auto;
 	width: 90%;
 }
 
