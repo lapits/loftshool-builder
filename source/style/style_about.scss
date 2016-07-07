@@ -140,7 +140,7 @@
 	@include clearfix;
 	position: relative;
 	min-width: 100%;
-	height: 650px;
+	min-height: 650px;
 	text-align: center;
 
 }
@@ -288,6 +288,10 @@
 	@media screen and (max-width: 320px) {
 		width: 100%;
 	};
+
+	&:after {
+    content: "";
+	}
 }
 
 .main-works_header-examples {
@@ -338,6 +342,7 @@
 	position: relative;
 	margin: 8px auto 15px;
 }
+
 
 
 .main-works_examples-left_delim {
@@ -500,13 +505,15 @@
 	text-align: center;
 	color: #4e8839;
 	height: 100%;
+	width: 130px;
+	margin: 10px;
 }
 
 .main-about_why_skills_skill_name {
 	display: inline-block;
 	position: absolute;
 	font-size: 14px;
-	width: 100%;
+	width: 50%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -516,33 +523,10 @@
 .g-circles {
  	fill: none;
  	stroke-width: 20px;
- 	@media screen and (min-width: 1200px) {
-		width: 120px;
-		height: 120px;
-		max-width: 120px;
-		max-height: 120px;
-	}
-
-  @media screen and (max-width: 1200px) {
-		width: 120px;
-		height: 120px;
-		max-width: 120px;
-		max-height: 120px;
-	}
-
-  @media screen and (max-width: 768px) {
-		width: 120px;
-		height: 120px;
-		max-width: 120px;
-		max-height: 120px;
-	}
-	
-  @media screen and (max-width: 320px) {
-		width: 111px;
-		height: 111px;
-		max-width: 111px;
-		max-height: 111px;
-	}
+	width: 120px;
+	height: 120px;
+	max-width: 130px;
+	max-height: 130px;
 }
 
 .circle_experience {
@@ -551,14 +535,14 @@
 	cy: 60px;
 	stroke: #DDDAD3;
 	fill: none;
-	transform: rotate(90deg);
+/*	transform: rotate(180deg);
 	transform-origin: 50% 50%;
-}
+*/}
 
 .sector {
 	stroke: #76A365;
- 	stroke-dasharray: 157 314;
- 	transform-origin: 50% 50%;
+ 	stroke-dasharray: 157;
+ 	/*transform-origin: 50% 50%;*/
  	transition: all 1s;
 }
 
