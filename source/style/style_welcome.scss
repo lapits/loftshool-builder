@@ -42,18 +42,23 @@ body {
 }
 
 .autorization {
-	display: block;
-	border-width: 1px;
-	border-color: #ffffff;
-	border-style: solid;
-	border-radius: 20px;
 	width: 147px;
 	height: 40px;
 	font-family: Roboto-Medium, serif;
 	font-size: 14px;
 	color: #fff;
 	background-color: transparent;
-	margin: 10px auto;
+}
+
+.autorization-welcome {
+	display: block;
+	border-width: 1px;
+	border-color: #ffffff;
+	border-style: solid;
+	border-radius: 20px;
+	margin-top: 25px;
+	margin-left: auto;
+	margin-right: 100px;
 }
 
 .main {
@@ -177,18 +182,17 @@ body {
 
 .social_list-item {
 	margin: 0 13px 0 13px;
+	fill: #999;
 }
 
 .social_list-item:hover {
-	background-color:  rgba(255, 255, 255, 0.55);
+	fill: #669933;
 }
 
 
 
-.nav_social_svg {
+.nav_social_svg svg {
 	display: inline-block;
-	fill: #000;
-	opacity: 0.7;
 	vertical-align: middle;
 	@media screen and (min-width: 1200px) {
 		height: 22px;
