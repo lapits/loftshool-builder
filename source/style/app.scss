@@ -28,6 +28,13 @@
 }
 
 @font-face {
+  font-family: Roboto-LightItalic;
+  src: url("../img/fonts/Roboto-LightItalic.ttf");
+  font-style: italic;
+}
+
+
+@font-face {
   font-family: Roboto-Regular;
   src: url("../img/fonts/Roboto-Regular.ttf");
   font-style: normal;
@@ -36,6 +43,7 @@
 @font-face {
   font-family: Roboto-Light;
   src: url("../img/fonts/Roboto-Light.ttf");
+  font-style: normal;
 }
 
 @font-face {

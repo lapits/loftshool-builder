@@ -528,6 +528,58 @@
 }
 
 
+.nav-footer {
+	display: block;
+	position: relative;
+	height: 46px;
+	line-height: 46px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+
+.footer-nav_info {
+	position: relative;
+	display: block;
+	width: 33.33%;
+	float: left;
+	font-family: Roboto-Light;
+	font-size: 1rem;
+	color: #fff;
+	
+}
+
+.social-footer {
+	display: block;
+	position: relative;
+	vertical-align: middle;
+	width: 170px;
+	margin: 0 auto;
+}
+
+
+.footer-nav_nav-group {
+	position: relative;
+	display: block;
+	width: 33.33%;
+	float: left;
+}
+
+.footer-nav_quote {
+	position: relative;
+	display: block;
+	width: 33.33%;
+	float: right;
+
+	font-family: Roboto-LightItalic;
+	font-size: 1rem;
+	color: rgba(255,255,255,0.5);
+}
+
+.roboto-bold-italic {
+	font-family: Roboto-BoldItalic;
+}
+
 .g-circles {
  	fill: none;
  	stroke-width: 20px;

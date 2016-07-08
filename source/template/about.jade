@@ -107,7 +107,27 @@ html
                             circle(class="sector circle_experience")
                           .main-about_why_skills_skill_name #{name}
       .maps#maps
-      .footer-nav.footer-up 
+      .footer-nav.footer-up
+        .footer-nav_info 
+          p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.
+        .footer-nav_nav-group
+          nav.nav-footer
+            ul.nav_list
+              for name,index in navs
+                if index>0
+                  li(id="nav_list-item_"+index, class="nav_list-item-separator")  
+                li(id="nav_list-item_"+index, class="nav_list-item")
+                  a(href=navs_links[index], alt="меню: "+name, class="nav_list-link") #{name}
+          nav.social-footer
+            ul.social_list
+              li(id="social_list-item_"+val, class="social_list-item")
+                include ../images/vk.svg
+                include ../images/git.svg
+                include ../images/in.svg
+
+        .footer-nav_quote 
+          p Всегда пишите код так, будто сопровождать его будет склонный к насилию психопат, который знает, где вы живете.
+          p.roboto-bold-italic — Martin Golding
 
     .footer.footer-colored
       .footer_copyrights Алексей Лапицкий
