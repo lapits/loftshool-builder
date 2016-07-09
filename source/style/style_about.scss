@@ -1,7 +1,20 @@
 
 .bg-up {
-	background-position: 0 -110px;
-	/*background-size: 100% 10%;*/
+	@media screen and (min-width: 1200px) {
+		background-position: 0 -110px;
+	};
+
+	@media screen and (max-width: 1200px) {
+		background-position: 0 -100px;
+	};
+
+	@media screen and (max-width: 768px) {
+		background-position: 0 -80px;
+	};
+
+	@media screen and (max-width: 320px) {
+		background-position: 0 -110px;
+	};
 }
 
 .opinion_photo {
@@ -58,15 +71,21 @@
 	max-height: 100%;
 }
 
-.nav-arrow_svg {
-	width: 27px;
-	height: 17px;
-
-}
-
 .nav-arrow:hover {
 	cursor: pointer;
 }
+
+.nav-arrow_svg {
+	width: 27px;
+	height: 17px;
+	fill: none;
+	stroke: rgba(255, 255, 255, 0.70);
+}
+
+.nav-arrow_svg:hover {
+	stroke: rgba(255, 255, 255, 1);
+}
+
 
 .arrow-down {
 	left: 50%;
@@ -566,6 +585,15 @@
 	fill: #fff;
 }
 
+.top_social_list-item {
+	margin: 0 13px 0 13px;
+	fill: #fff;
+}
+
+.top_social_list-item:hover {
+	fill: #6c9c5a;
+}
+
 
 .footer-nav_nav-group {
 	position: relative;
@@ -636,6 +664,39 @@
   	height: 675px;
 	}
 }
+
+.info-over-map {
+	display: block;
+	position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	background-color: rgba(255,255,255,0.85);
+ 	@media screen and (min-width: 1200px) {
+ 		width: 380px;
+		height: 312px;
+		top: -450px;
+	}
+
+  @media screen and (max-width: 1200px) {
+ 		width: 380px;
+		height: 312px;
+		top: -500px;
+	}
+
+  @media screen and (max-width: 768px) {
+		height: 380px;
+ 		width: 310px;
+		height: 380px;
+	}
+	
+  @media screen and (max-width: 320px) {
+		height: 380px;
+ 		width: 310px;
+		height: 380px;
+	}
+
+}
+
 
 /* WORKS */
 .works_wrapper {
