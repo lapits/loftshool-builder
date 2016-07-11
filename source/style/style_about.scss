@@ -86,6 +86,17 @@
 	stroke: rgba(255, 255, 255, 1);
 }
 
+.nav-arrow_big_svg {
+	width: 50px;
+	height: 30px;
+	fill: none;
+	stroke: rgba(255, 255, 255, 1);
+}
+
+.nav-arrow_big_svg:hover {
+	stroke: rgba(255, 255, 255, 0.6);
+}
+
 
 .arrow-down {
 	left: 50%;
@@ -113,6 +124,13 @@
 	transform: translate(-13px);
 	bottom: 200px;
 }
+
+.arrow-example {
+	left: 50%;
+	transform: translate(-13px);
+	top: 50%;
+}
+
 
 .top-left {
 	display: inline-block;
@@ -844,12 +862,23 @@
 
 .main-works_examples-right_up-down {
 	@include clearfix;
+	position: relative;
+}
+
+.main-works_examples-right_up-down-gray {
+	top: 0;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background-color: rgba(181, 186, 177, 0.8);
+
 }
 
 .main-works_examples-right_up-down_left {
 	display: inline-block;
 	float: left;
 	width: 50%;
+	position: inherit;
 	@media screen and (min-width: 1200px) {
 		max-width: 348px;
 	};
@@ -871,6 +900,7 @@
 	display: inline-block;
 	float: right;
 	width: 50%;
+	position: inherit;
 	@media screen and (min-width: 1200px) {
 		max-width: 348px;
 	};
