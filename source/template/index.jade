@@ -8,8 +8,9 @@ html
 
     .wrapper
       .header
-        button#autorization.autorization.autorization-welcome Авторизоваться
-      .main.main-hover
+        .autorization.autorization-welcome#autorization
+          a(href="#") Авторизоваться
+      .main.main-center.main-hover
         .main_break
         .main_photo
           img(src="assets/img/ava141.jpg", class="ava", alt="фото")
@@ -37,7 +38,7 @@ html
               if index>0
                 li(id="nav_list-item_"+index, class="nav_list-item-separator")  
               li(id="nav_list-item_"+index, class="nav_list-item")
-                a(href=navs_links[index], alt="меню: "+name, class="nav_list-link") #{name}
+                a(href=navs_links[index], class="nav_list-link") #{name}
     .footer.footer-main
       .footer_copyrights Алексей Лапицкий
       .footer_comments создано с любовью в LoftSchool 2016

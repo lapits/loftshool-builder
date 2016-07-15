@@ -44,14 +44,21 @@ body {
 .autorization {
 	width: 147px;
 	height: 40px;
-	font-family: Roboto-Medium, serif;
-	font-size: 14px;
+	line-height: 40px;
 	color: #fff;
 	background-color: transparent;
+	text-align: center;
+	font-family: Roboto-Medium, serif;
+	font-size: 14px;
+	display: inline-block;
 }
 
 .autorization:hover {
-	background-color: #999;
+	background-color: rgba(18, 38, 32, 0.6);
+}
+
+.autorization a {
+	height: 100%;
 }
 
 .autorization-welcome {
@@ -86,35 +93,34 @@ body {
 
 .main {
 	display: block;
+	position: relative;
+	margin: 35px auto 0;
+	text-align: center;
 	border-radius: 0px;
 	
 	@media screen and (min-width: 1200px) {
 		width: 380px;
-		height: 100%;
-		min-height: 600px;
 	};
 
 	@media screen and (max-width: 1200px) {
 		width: 300px;
-		height: 100%;
-		min-height: 500px;
 	};
 
 	@media screen and (max-width: 768px) {
 		width: 300px;
-		height: 100%;
-		min-height: 450px;
 	};
 
 	@media screen and (max-width: 320px) {
 		width: 300px;
-		min-height: 395px;
 	};
+}
 
-	height: 100%;
-	margin: 35px auto 0;
-	position: relative;
-	text-align: center;
+.main-center {
+	position: absolute;
+	top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+	
 }
 
 .main-hover:hover {

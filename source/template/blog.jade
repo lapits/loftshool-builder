@@ -1,3 +1,7 @@
+mixin anysvg (name, className)
+  svg(class=className)
+    use(xlink:href="assets/img/"+name+".svg")
+
 doctype html
 html
   include common/_head
@@ -12,10 +16,18 @@ html
           .top-left
             nav.social
               ul.social_list
-                for name,index in socials
-                  li(id="social_list-item_"+name, class="social_list-item")
-                    a(href=socials_links[index],class="social_list-link")
-                      img(class="nav_social_svg", src=socials_img[index], alt="меню: "+name)
+                li(id="social_list-item_0", class="top_social_list-item")
+                  .nav_social_svg.vk-icon
+                    include ../images/vk.svg
+                    a(href=socials_links[0],class="social_list-link")
+                li(id="social_list-item_1", class="top_social_list-item")
+                  .nav_social_svg
+                    include ../images/git.svg
+                    a(href=socials_links[1],class="social_list-link")
+                li(id="social_list-item_2", class="top_social_list-item") 
+                  .nav_social_svg
+                    include ../images/in.svg
+                    a(href=socials_links[2],class="social_list-link")
 
           .top-right
             nav.hamburger
@@ -34,76 +46,93 @@ html
         .nav-poligons_left
           .pic-poligons
             svg(viewBox="0 0 900 175",preserveAspectRatio="none")
-              polygon(points="0,0  0,175  900,175  900,155",fill="#ebefe2")
+              polygon(points="0,0  0,175  900,175  900,155",fill="#f8f9f5")
         .nav-poligons_right
           .pic-poligons
             svg(viewBox="0 0 900 175",preserveAspectRatio="none")
-              polygon(points="0,155  0,175  900,175  900,0",fill="#f3f4ee")
-        .nav-arrow-down
+              polygon(points="0,155  0,175  900,175  900,0",fill="#f8f9f5")
+        .nav-arrow.arrow-down
           a(href="index.html")
-            svg(class="nav-arrow-down_svg", viewBox="0 0 27px 17px")
+            svg(class="nav-arrow_svg", viewBox="0 0 27 17")
               polyline(points="3,2  13,12  25,2" fill="none" stroke="rgba(255, 255, 255, 0.70)" stroke-width="6")
 
+      .main-works
+        .main-works_head_wrapper
+          .icon-works
+            include ../images/works_header.svg
+          h1.main-h-big.main-works_header-examples МОИ РАБОТЫ
+          svg.main-delim.main-works_head_wrapper_delim
+            line.line-delimiter(x1="0",y1="0",x2="89",y2="0") 
+        h1.main-works_examples
+          .main-works_examples-left
+            .examples-left-wrapper
+              .main-works_examples-left_header Сайт школы онлайн Образования
+              svg.main-delim.main-works_examples-left_delim
+                line.line-delimiter(x1="0",y1="0",x2="89",y2="0") 
+              .main-works_examples-left_tech HTML , CSS, JAVASCRIPT
+              .main-works_examples-left_button
+                button.main-works-view-btn Посмотреть сайт
+          .main-works_examples-right
+            .main-works_examples-right_view
+              img#work-example-big(src="assets/img/work-example-big-1.png", class="work-example-big", alt="образец работы большая картинка")
+            .main-works_examples-right_up-down
+              .main-works_examples-right_up-down_left
+                img#work-example-small-left(src="assets/img/work-example-small-2.png", class="work-example-small", alt="образец работы превью")
+                .main-works_examples-right_up-down-gray
+                .nav-arrow.arrow-example
+                  a(href="index.html")
+                    svg(class="nav-arrow_big_svg", viewBox="0 0 50 30")
+                      polyline(points="5,4  25,25  45,4" stroke-linejoin="miter" stroke-width="10")
+              .main-works_examples-right_up-down_right
+                img#work-example-small-right(src="assets/img/work-example-small-3.png", class="work-example-small", alt="образец работы превью")
+                .main-works_examples-right_up-down-gray
+                .nav-arrow.arrow-example
+                  a(href="index.html")
+                    svg(class="nav-arrow_big_svg", viewBox="0 0 50 30")
+                      polyline(points="5,25  25,8  45,25" stroke-linejoin="miter" stroke-width="10")
 
-      .main-about
-        .about_wrapper
-          .head
-            .main-about_head_wrapper
-              h1.main-about_who_h-big ОБО МНЕ
-            svg.main-about_delim
-              line(x1="0",y1="0",x2="89",y2="0") 
-          .who
-            .main-about_photo-about 
-              img(src="assets/img/matrix_ava_437_390.jpg", class="main-about_photo-about_ava", alt="фото")
-            h1.main-about_who_h-small КТО Я
-            svg.main-about_who_delim
-              line(x1="0",y1="0",x2="89",y2="0") 
+        .main-works_about
+          .main-works_opinion
+            .icon-works
+              include ../images/about_header.svg
+            h1.main-h-big.main-works_opinion_h ЧТО ОБО МНЕ ГОВОРЯТ
+            svg.main-delim.main-works_head_opinion_delim
+              line.line-delimiter(x1="0",y1="0",x2="89",y2="0") 
+            .main-works_opinion-wrapper
+              .main-works_opinion_left
+                .main-works_opinion_photo
+                  img(src="assets/img/kovald.png", class="opinion_photo", alt="фото преподавателя")
+                .main-works_opinion_text Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+                .main-works_opinion_person Ковальчук Дмитрий
+                .main-works_opinion_person-status — основатель Loftschool
 
-            .main-about_content Я веб разработчик из Санкт-Петербурга. Мне 42 года. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты. Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
+              .main-works_opinion_right
+                .main-works_opinion_photo
+                  img(src="assets/img/zarz.png", class="opinion_photo", alt="фото преподавателя")
+                .main-works_opinion_text Этот код выдержет любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
+                .main-works_opinion_person Зар Захаров
+                .main-works_opinion_person-status — главный преподаватель
 
-        .why
-          .why_wrapper
-            h1.why_h-small 
-              p ЧЕМ Я МОГУ БЫТЬ
-              p ВАМ ПОЛЕЗЕН
-            svg.main-about_why_delim
-              line(x1="0",y1="0",x2="89",y2="0") 
+          .main-works_feedback
+            .main-works_feedback_head СВЯЗАТЬСЯ СО МНОЙ
+            svg.main-delim.main-works_feedback_head-delim
+              line.line-delimiter(x1="0",y1="0",x2="89",y2="0") 
+            form.main-works_feedback-form
+              input.main-works_feedback_name.input.input-feedback-field(placeholder="Имя")
+              input.main-works_feedback_email.input.input-feedback-field(placeholder="Email")
+              textarea.main-works_feedback_msg(placeholder="Ваше сообщение")
+              .main-works_feedback_buttons
+                button.main-works_feedback_btn.btn-border-bottom-left Отправить
+                button.main-works_feedback_btn.btn-border-bottom-right.btn-separator Очистить
 
-            .main-about_content  Больше всего меня привлекает Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
-            .main-about_why_skills
-              ul.list
-                li.main-about_why_frontend Frontend
-                  ul.list
-                    for name, index in frontend_skills
-                      li(id="frontend_"+name, class="frontend-skill")
-                        .main-about_why_skills_skill
-                          svg(class="g-circles",id="frontend"+index)
-                            circle(class="circle_experience")
-                            circle(class="sector circle_experience")
-                          .main-about_why_skills_skill_name #{name}
-                li.main-about_why_backend Backend
-                  ul.list
-                    for name, index in backend_skills
-                      li(id="backend_"+name, class="backend-skill")
-                        .main-about_why_skills_skill
-                          svg(class="g-circles",id="backend"+index)
-                            circle(class="circle_experience")
-                            circle(class="sector circle_experience")
-                          .main-about_why_skills_skill_name #{name}
-                li.main-about_why_workflow Workflow
-                  ul.list
-                    for name, index in workflow_skills
-                      li(id="workflow_"+name, class="workflow-skill")
-                        .main-about_why_skills_skill
-                          svg(class="g-circles",id="workflow"+index)
-                            circle(class="circle_experience")
-                            circle(class="sector circle_experience")
-                          .main-about_why_skills_skill_name #{name}
-      .maps#maps
-      .footer-nav 
+          .nav-arrow.arrow-up
+            a(href="index.html")
+              svg(class="nav-arrow_svg", viewBox="0 0 27 17")
+                polyline(points="3,12 13,2 25,12" stroke-width="6")
 
-    .footer.footer-colored
+        //- .footer-nav.footer-up 
+
+    .footer.footer-other.footer-colored
       .footer_copyrights Алексей Лапицкий
       .footer_comments создано с любовью в LoftSchool 2016
 
-  script(src="assets/js/maps.js")
