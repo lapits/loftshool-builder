@@ -73,7 +73,7 @@ html
 
             p.main-about_content Я веб разработчик из Санкт-Петербурга. Мне 42 года. 
             p.main-about_content Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты. 
-            p.main-about_content Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
+            p.main-about_content Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
         .why
           .why_wrapper
             h1.why_h-small 
@@ -116,11 +116,28 @@ html
       .footer-nav.footer-up
         .info-over-map
           .info-over-map_h Контакты
-          .info-over-map_delim
-          .info-over-map_skype Lapitskiy74
-          .info-over-map_mail Lapits@gmail.com
-          .info-over-map_phone +7 999 999 99 99
-          .info-over-map_address Бангкок
+          svg.main-delim.info-over-map_delim
+            line.line-delimiter(x1="0",y1="0",x2="89",y2="0") 
+          .info-over-map_contact.info-over-map_skype
+            .info-over-map_icon-wrqpper
+              .info-over-map_icon
+                include ../images/skype.svg
+            .info-over-map_text Lapitskiy74
+          .info-over-map_contact.info-over-map_mail
+            .info-over-map_icon-wrqpper
+              .info-over-map_icon
+                include ../images/envelope2.svg
+            .info-over-map_text Lapits@gmail.com
+          .info-over-map_contact.info-over-map_phone
+            .info-over-map_icon-wrqpper
+              .info-over-map_icon
+                include ../images/phone2.svg
+            .info-over-map_text +7 999 999 99 99
+          .info-over-map_contact.info-over-map_address
+            .info-over-map_icon-wrqpper
+              .info-over-map_icon
+                include ../images/map_marker.svg
+            .info-over-map_text Бангкок
         .footer-nav_info 
           p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.
         .footer-nav_nav-group

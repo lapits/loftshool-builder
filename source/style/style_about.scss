@@ -550,7 +550,7 @@
 	text-align: center;
 	color: #4e8839;
 	height: 100%;
-	width: 130px;
+	max-width: 130px;
 	margin: 10px;
 }
 
@@ -638,18 +638,54 @@
 .g-circles {
  	fill: none;
  	stroke-width: 20px;
-	width: 120px;
-	height: 120px;
-	max-width: 130px;
-	max-height: 130px;
+ 	@media screen and (min-width: 1200px) {
+		width: 120px;
+		height: 120px;
+		max-width: 130px;
+		max-height: 130px;
+	}
+
+  @media screen and (max-width: 1200px) {
+		width: 120px;
+		height: 120px;
+		max-width: 130px;
+		max-height: 130px;
+	}
+
+  @media screen and (max-width: 768px) {
+		width: 120px;
+		height: 120px;
+		max-width: 130px;
+		max-height: 130px;
+	}
+	
+  @media screen and (max-width: 320px) {
+		width: 115px;
+		height: 115px;
+	}
 }
 
 .circle_experience {
-	r: 50px;
-	cx: 60px;
-	cy: 60px;
 	stroke: #DDDAD3;
 	fill: none;
+	cx: 60px;
+	cy: 60px;
+
+ 	@media screen and (min-width: 1200px) {
+		r: 50px;
+	}
+
+  @media screen and (max-width: 1200px) {
+		r: 50px;
+	}
+
+  @media screen and (max-width: 768px) {
+		r: 50px;
+	}
+	
+  @media screen and (max-width: 320px) {
+		r: 45px;
+	}
 /*	transform: rotate(180deg);
 	transform-origin: 50% 50%;
 */}
@@ -679,7 +715,7 @@
 	}
 	
   @media screen and (max-width: 320px) {
-  	height: 675px;
+  	height: 880px;
 	}
 }
 
@@ -698,19 +734,20 @@
   @media screen and (max-width: 1200px) {
  		width: 380px;
 		height: 312px;
-		top: -500px;
+		top: -364px;
 	}
 
   @media screen and (max-width: 768px) {
-		height: 380px;
- 		width: 310px;
-		height: 380px;
+		height: 300px;
+ 		width: 350px;
+		top: -280px;
 	}
 	
   @media screen and (max-width: 320px) {
-		height: 380px;
- 		width: 310px;
-		height: 380px;
+		height: 280px;
+ 		width: 100%;
+ 		max-width: 320px;
+		top: -450px;
 	}
 
 }
@@ -1433,5 +1470,109 @@
 
 .btn-separator {
   border-left: 2px solid rgba(255,255,255,0.5);
+}
+
+.info-over-map_contact {
+	line-height: 1.5rem;
+	@media screen and (min-width: 1200px) {
+		margin: 16px 10px 16px 40px;
+	};
+
+	@media screen and (max-width: 1200px) {
+		margin: 16px 10px 16px 40px;
+	};
+
+	@media screen and (max-width: 768px) {
+		margin: 16px 10px 16px 20px;
+	};
+
+	@media screen and (max-width: 320px) {
+		margin: 16px 10px 16px 30px;
+	};
+
+}
+
+.info-over-map_h {
+	font-family: Webissimo-Regular , serif;
+	font-weight: normal;
+	font-size: 2.1875rem;
+	text-transform: uppercase;
+	text-align: center;
+	color: #566358;
+	@media screen and (min-width: 1200px) {
+		padding-top: 25px;
+	};
+
+	@media screen and (max-width: 1200px) {
+		padding-top: 25px;
+	};
+
+	@media screen and (max-width: 768px) {
+		padding-top: 25px;
+	};
+
+	@media screen and (max-width: 320px) {
+		padding-top: 20px;
+	};
+
+}
+
+.info-over-map_text {
+	line-height: 1.5rem;
+	display: inline-block;
+	font-family: Roboto-Regular , serif;
+	font-weight: normal;
+	font-size: 1rem;
+	text-align: left;
+	color: #566358;
+	@media screen and (min-width: 1200px) {
+		margin: 0 10px 0 10px;
+	};
+
+	@media screen and (max-width: 1200px) {
+		margin: 0 10px 0 10px;
+	};
+
+	@media screen and (max-width: 768px) {
+		margin: 0 10px 0 10px;
+	};
+
+	@media screen and (max-width: 320px) {
+		margin: 0 10px 0 10px;
+	};
+}
+
+.info-over-map_icon-wrqpper {
+	display: inline-block;
+	width: 24px;
+	font-size: 0;
+	vertical-align: middle;
+}
+
+.info-over-map_icon {
+	width: 100%;
+	display: block;
+	fill: #669966;
+	margin: 0 auto;
+}
+
+.info-over-map_delim {
+	position: relative;
+	@media screen and (min-width: 1200px) {
+		margin: 23px auto 30px;
+	};
+
+	@media screen and (max-width: 1200px) {
+		margin: 20px auto 8px;
+	};
+
+	@media screen and (max-width: 768px) {
+		margin: 12px auto 8px;
+	};
+
+	@media screen and (max-width: 320px) {
+		margin: 12px auto 8px;
+	};
+
 }
 
