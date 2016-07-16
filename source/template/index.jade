@@ -16,7 +16,7 @@ html
           img(src="assets/img/ava141.jpg", class="ava", alt="фото")
 
         .main_name Алексей Лапицкий
-        .main_note Личный сайт веб разработчика
+        h1.main_note Личный сайт веб разработчика
         .main_social
           nav.social
             ul.social_list
@@ -39,6 +39,25 @@ html
                 li(id="nav_list-item_"+index, class="nav_list-item-separator")  
               li(id="nav_list-item_"+index, class="nav_list-item")
                 a(href=navs_links[index], class="nav_list-link") #{name}
+
+      .autorization-wrapper.main-center
+        .autorization-header Авторизуйтесь
+        svg.autorization-delim
+          line.line-delimiter(x1="0",y1="0",x2="89",y2="0") 
+        .autorization-login
+        .autorization-password
+        .autorization-check
+          .autorization-check-human
+          .autorization-check-question Вы точно не робот?
+          .autorization-check-radio
+            .autorization-check-radio1
+            .autorization-check-radio2
+        .autorization-buttons
+          .autorization-go-main
+            a(href="index.html") На главную
+          .autorization-enter 
+            a(href="#") Войти
+                
     .footer.footer-main
       .footer_copyrights Алексей Лапицкий
       .footer_comments создано с любовью в LoftSchool 2016
