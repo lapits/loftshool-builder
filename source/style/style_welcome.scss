@@ -94,7 +94,7 @@ body {
 .autorization-wrapper {
 	display: block;
 	position: relative;
-	margin: 35px auto 0;
+	margin: 0 auto;
 	text-align: center;
 	border-radius: 0px;
 	background-color: rgba(18, 38, 32, 0.6);
@@ -113,7 +113,8 @@ body {
 	};
 
 	@media screen and (max-width: 320px) {
-		width: 300px;
+		max-width: 300px;
+		width: 100%;
 		min-height: 422px;
 	};
 
@@ -126,6 +127,7 @@ body {
 	text-transform: uppercase;
 	text-align: center;
 	color: #fff;
+	margin: 44px auto  25px;
 	@media screen and (max-width: 320px) {
 		font-size: 1.875rem;
 	};
@@ -135,11 +137,61 @@ body {
 	display: block;
 	position: relative;
 	stroke-width: 3px;
-	height: 3px;
+	height: 6px;
 	width: 89px;
 	max-width: 100%;
 	stroke: #fff;
 	margin: 8px auto 15px;
+}
+
+.autorization-password {
+	height: 45px;
+}
+
+.autorization-login-icon {
+	width: 45px;
+}
+
+.autorization-password-icon {
+	width: 45px;
+}
+
+.autorization-buttons {
+	background: rgba(255, 255, 255, 1);
+}
+
+.autorization-btn {
+	float: left;
+ 	font-family: Roboto-Medium, serif;
+ 	font-style: normal;
+	font-size: 1rem;
+	line-height: 2.8125rem;
+	color: #ffffff;
+  font-size: 1em;
+  border: none;
+  background: rgba(78, 136, 57, 0.8);
+  text-decoration: none;
+  height: 2.8125rem;
+	width: 49.5%;
+}
+
+.autorization-btn:hover {
+  background: #6c9c5a;
+  text-decoration: none;
+}
+
+.autorization-go-main {
+	float: left;
+	-webkit-border-bottom-left-radius: 0.3125em;
+	-moz-border-radius-bottomleft: 0.3125em;
+	border-bottom-left-radius: 0.3125em;
+}
+
+.autorization-enter {
+	float: left;
+	-webkit-border-bottom-right-radius: 0.3125em;
+	-moz-border-radius-bottomright: 0.3125em;
+	border-bottom-right-radius: 0.3125em;
 }
 
 

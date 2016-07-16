@@ -43,21 +43,33 @@ html
       .autorization-wrapper.main-center
         .autorization-header Авторизуйтесь
         svg.autorization-delim
-          line.line-delimiter(x1="0",y1="0",x2="89",y2="0") 
+          line.line-delimiter(x1="0",y1="3",x2="89",y2="3") 
         .autorization-login
-        .autorization-password
-        .autorization-check
-          .autorization-check-human
-          .autorization-check-question Вы точно не робот?
-          .autorization-check-radio
-            .autorization-check-radio1
-            .autorization-check-radio2
+        form
+          .autorization-password
+            .autorization-login-icon
+            .autorization-login-link
+              input(placeholder="Логин")
+            .autorization-password-icon
+            .autorization-password-link
+              input(type="password" placeholder="Пароль")
+          .autorization-check
+            p
+              input.autorization-check-human(type="checkbox") 
+              Я человек
+            .autorization-check-question Вы точно не робот?
+            .autorization-check-radio
+              span
+                input.autorization-check-radio(type="radio" name="autorization")
+                Да  
+              span
+                input.autorization-check-radio(type="radio" name="autorization")
+                Не уверен
         .autorization-buttons
-          .autorization-go-main
+          .autorization-btn.autorization-go-main
             a(href="index.html") На главную
-          .autorization-enter 
+          .autorization-btn.autorization-enter.btn-separator
             a(href="#") Войти
-                
     .footer.footer-main
       .footer_copyrights Алексей Лапицкий
       .footer_comments создано с любовью в LoftSchool 2016
