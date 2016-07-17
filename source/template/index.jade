@@ -45,18 +45,21 @@ html
         svg.autorization-delim
           line.line-delimiter(x1="0",y1="3",x2="89",y2="3") 
         .autorization-login
-        form
-          .autorization-password
-            .autorization-login-icon
-            .autorization-login-link
-              input(placeholder="Логин")
-            .autorization-password-icon
-            .autorization-password-link
-              input(type="password" placeholder="Пароль")
+        form.autorization-form
+          .autorization-login-password
+            .autorization-login
+              .autorization-login-icon
+              .autorization-login-link
+                input.autorization-login-link-input(placeholder="Логин")
+            .autorization-password
+              .autorization-password-icon
+              .autorization-password-link
+                input.autorization-password-link-input(type="password" placeholder="Пароль")
           .autorization-check
-            p
-              input.autorization-check-human(type="checkbox") 
-              Я человек
+            label.autorization-check-line
+              input.autorization-checkbox(type="checkbox" id="is_human" onclick="toggle_human()") 
+              span
+              .autorization-checkbox-text Я человек
             .autorization-check-question Вы точно не робот?
             .autorization-check-radio
               span

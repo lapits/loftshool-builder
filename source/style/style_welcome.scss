@@ -144,16 +144,59 @@ body {
 	margin: 8px auto 15px;
 }
 
+.autorization-form {
+	overflow: hidden;
+	margin: 30px auto 0;
+}
+
+.autorization-login {
+	display: block;
+	width: 340px;
+	margin: 10px auto 10px;
+}
+
+.autorization-login-link {
+	display: inline-block;
+}
+
+.autorization-login-link-input {
+	width: 295px;
+	height: 45px;
+	border: none;
+	padding: 0;
+}
+
 .autorization-password {
+	display: block;
+	width: 340px;
+	margin: 20px auto 20px;
+}
+
+
+.autorization-password-link {
+	display: inline-block;
+}
+
+.autorization-password-link-input {
+	width: 295px;
+	height: 45px;
+	border: none;
+	padding: 0;
+}
+
+
+.autorization-login-icon {
+	display: inline-block;
+	float: left;
+	width: 45px;
 	height: 45px;
 }
 
-.autorization-login-icon {
-	width: 45px;
-}
-
 .autorization-password-icon {
+	display: inline-block;
+	float: left;
 	width: 45px;
+	height: 45px;
 }
 
 .autorization-buttons {
@@ -192,6 +235,43 @@ body {
 	-webkit-border-bottom-right-radius: 0.3125em;
 	-moz-border-radius-bottomright: 0.3125em;
 	border-bottom-right-radius: 0.3125em;
+}
+
+.autorization-check-line {
+	position: relative;
+	margin: 10px auto;
+}
+
+.autorization-checkbox {
+	display: inline-block;
+}
+
+.autorization-checkbox + span {
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	top: 0;
+  height: 20px;
+  width: 20px;
+  cursor: pointer; 
+	background: url("../img/spritebox-sprite.png") no-repeat;
+  background-position: 0 0;
+}
+
+.autorization-checkbox:checked  + span {
+	background: url("../img/spritebox-sprite.png") no-repeat;
+  background-position: -20px 0;
+}
+
+
+.autorization-checkbox-text {
+	display: inline-block;
+	font-family: Roboto-Regular , serif;
+	font-weight: normal;
+	color: #fff;
+	font-size: 1rem;
+	text-align: left;
+	margin-left: 10px;
 }
 
 
