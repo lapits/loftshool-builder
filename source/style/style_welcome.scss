@@ -105,11 +105,11 @@ body {
 	};
 
 	@media screen and (max-width: 1200px) {
-		width: 300px;
+		width: 380px;
 	};
 
 	@media screen and (max-width: 768px) {
-		width: 300px;
+		width: 348px;
 	};
 
 	@media screen and (max-width: 320px) {
@@ -153,6 +153,20 @@ body {
 	display: block;
 	width: 340px;
 	margin: 10px auto 10px;
+	@include clearfix;
+
+	@media screen and (max-width: 1200px) {
+		max-width: 310px;
+	};
+
+	@media screen and (max-width: 768px) {
+		width: 310px;
+	};
+
+	@media screen and (max-width: 320px) {
+		max-width: 270px;
+		width: 100%;
+	};
 }
 
 .autorization-login-link {
@@ -160,16 +174,59 @@ body {
 }
 
 .autorization-login-link-input {
-	width: 295px;
-	height: 45px;
+	width: 280px;
+	height: 35px;
 	border: none;
-	padding: 0;
+	padding: 5px 5px 5px 10px;
+ 	font-family: Roboto-Regular, serif;
+ 	font-style: normal;
+	font-size: 1rem;
+	border-top-right-radius: 23px;
+	border-bottom-right-radius: 23px;
+
+
+	&::-webkit-input-placeholder {
+		color: rgba(#000, 0.5);
+	};
+	&:-moz-placeholder {
+		color: rgba(#000, 0.5);
+	};
+	&::-moz-placeholder {
+		color: rgba(#000, 0.5);
+	};
+	&:-ms-input-placeholder {
+		color: rgba(#000, 0.5);
+	};
+
+	@media screen and (max-width: 768px) {
+		width: 265px;
+	};
+
+	@media screen and (max-width: 320px) {
+		max-width: 230px;
+		width: 100%;
+	};
+
 }
 
 .autorization-password {
 	display: block;
 	width: 340px;
 	margin: 20px auto 20px;
+	@include clearfix;
+
+	@media screen and (max-width: 1200px) {
+		max-width: 310px;
+	};
+
+	@media screen and (max-width: 768px) {
+		width: 310px;
+	};
+
+	@media screen and (max-width: 320px) {
+		max-width: 270px;
+		width: 100%;
+	};
 }
 
 
@@ -178,10 +235,38 @@ body {
 }
 
 .autorization-password-link-input {
-	width: 295px;
-	height: 45px;
+	width: 280px;
+	height: 35px;
 	border: none;
-	padding: 0;
+	padding: 5px 5px 5px 10px;
+ 	font-family: Roboto-Regular, serif;
+ 	font-style: normal;
+	font-size: 1rem;
+	border-top-right-radius: 23px;
+	border-bottom-right-radius: 23px;
+
+
+	&::-webkit-input-placeholder {
+		color: rgba(#000, 0.5);
+	};
+	&:-moz-placeholder {
+		color: rgba(#000, 0.5);
+	};
+	&::-moz-placeholder {
+		color: rgba(#000, 0.5);
+	};
+	&:-ms-input-placeholder {
+		color: rgba(#000, 0.5);
+	};
+
+	@media screen and (max-width: 768px) {
+		width: 265px;
+	};
+
+	@media screen and (max-width: 320px) {
+		max-width: 230px;
+		width: 100%;
+	};
 }
 
 
@@ -244,13 +329,14 @@ body {
 
 .autorization-checkbox {
 	display: inline-block;
+	margin: 3px auto;
 }
 
 .autorization-checkbox + span {
 	display: inline-block;
 	position: absolute;
 	left: 0;
-	top: 0;
+	top: -3px;
   height: 20px;
   width: 20px;
   cursor: pointer; 
@@ -266,7 +352,7 @@ body {
 
 .autorization-checkbox-text {
 	display: inline-block;
-	font-family: Roboto-Regular , serif;
+	font-family: Roboto-Regular,serif;
 	font-weight: normal;
 	color: #fff;
 	font-size: 1rem;
@@ -274,6 +360,22 @@ body {
 	margin-left: 10px;
 }
 
+.autorization-check-question {
+	font-family: Roboto-Bold,serif;
+	font-weight: bold;
+	color: #fff;
+	font-size: 1rem;
+	margin: 20px auto 14px;
+	line-height: 1rem;
+}
+
+.autorization-check-radio {
+	font-family: Roboto-Regular,serif;
+	font-weight: normal;
+	color: rgba(#fff, 0.8);
+	font-size: 1rem;
+
+}
 
 .main {
 	display: block;
