@@ -9,70 +9,71 @@ html
     .wrapper
       .header
         .autorization.autorization-welcome#autorization
-          a(href="#") Авторизоваться
-      .main.main-center.main-hover
-        .main_break
-        .main_photo
-          img(src="assets/img/ava141.jpg", class="ava", alt="фото")
+          a(href="#" onclick="autorization()") Авторизоваться
+      .wrap-animation.main-center
+        .main.main-hover#main-block
+          .main_break
+          .main_photo
+            img(src="assets/img/ava141.jpg", class="ava", alt="фото")
 
-        .main_name Алексей Лапицкий
-        h1.main_note Личный сайт веб разработчика
-        .main_social
-          nav.social
-            ul.social_list
-              li(id="social_list-item_0", class="social_list-item")
-                .nav_social_svg.vk-icon
-                  include ../images/vk.svg
-                  a(href=socials_links[0],class="social_list-link")
-              li(id="social_list-item_1", class="social_list-item")
-                .nav_social_svg
-                  include ../images/git.svg
-                  a(href=socials_links[1],class="social_list-link")
-              li(id="social_list-item_2", class="social_list-item")
-                .nav_social_svg
-                  include ../images/in.svg
-                  a(href=socials_links[2],class="social_list-link")
-        nav.nav
-          ul.nav_list
-            for name,index in navs
-              if index>0
-                li(id="nav_list-item_"+index, class="nav_list-item-separator")  
-              li(id="nav_list-item_"+index, class="nav_list-item")
-                a(href=navs_links[index], class="nav_list-link") #{name}
+          .main_name Алексей Лапицкий
+          h1.main_note Личный сайт веб разработчика
+          .main_social
+            nav.social
+              ul.social_list
+                li(id="social_list-item_0", class="social_list-item")
+                  .nav_social_svg.vk-icon
+                    include ../images/vk.svg
+                    a(href=socials_links[0],class="social_list-link")
+                li(id="social_list-item_1", class="social_list-item")
+                  .nav_social_svg
+                    include ../images/git.svg
+                    a(href=socials_links[1],class="social_list-link")
+                li(id="social_list-item_2", class="social_list-item")
+                  .nav_social_svg
+                    include ../images/in.svg
+                    a(href=socials_links[2],class="social_list-link")
+          nav.nav
+            ul.nav_list
+              for name,index in navs
+                if index>0
+                  li(id="nav_list-item_"+index, class="nav_list-item-separator")  
+                li(id="nav_list-item_"+index, class="nav_list-item")
+                  a(href=navs_links[index], class="nav_list-link") #{name}
 
-      .autorization-wrapper.main-center
-        .autorization-header Авторизуйтесь
-        svg.autorization-delim
-          line.line-delimiter(x1="0",y1="3",x2="89",y2="3") 
-        .autorization-login
-        form.autorization-form
-          .autorization-login-password
-            .autorization-login
-              .autorization-login-link
-                input.autorization-login-link-input(placeholder="Логин")
-                .autorization-login-icon
-            .autorization-password
-              .autorization-password-link
-                input.autorization-password-link-input(type="password" placeholder="Пароль")
-                .autorization-password-icon
-          .autorization-check
-            label.autorization-check-line
-              input.autorization-checkbox(type="checkbox" id="is_human") 
-              span
-              .autorization-checkbox-text Я человек
-            .autorization-check-question Вы точно не робот?
-            .autorization-check-radio
-              span
-                input.autorization-check-radio(type="radio" name="autorization")
-                Да  
-              span
-                input.autorization-check-radio(type="radio" name="autorization")
-                Не уверен
-        .autorization-buttons
-          .autorization-btn.autorization-go-main
-            a(href="index.html") На главную
-          .autorization-btn.autorization-enter.btn-separator
-            a(href="#") Войти
+        .autorization-wrapper#autorization-block
+          .autorization-header Авторизуйтесь
+          svg.autorization-delim
+            line.line-delimiter(x1="0",y1="3",x2="89",y2="3") 
+          .autorization-login
+          form.autorization-form
+            .autorization-login-password
+              .autorization-login
+                .autorization-login-link
+                  input.autorization-login-link-input(placeholder="Логин")
+                  .autorization-login-icon
+              .autorization-password
+                .autorization-password-link
+                  input.autorization-password-link-input(type="password" placeholder="Пароль")
+                  .autorization-password-icon
+            .autorization-check
+              label.autorization-check-line
+                input.autorization-checkbox(type="checkbox" id="is_human") 
+                span
+                .autorization-checkbox-text Я человек
+              .autorization-check-question Вы точно не робот?
+              .autorization-check-radio
+                span
+                  input.autorization-check-radio(type="radio" name="autorization")
+                  Да  
+                span
+                  input.autorization-check-radio(type="radio" name="autorization")
+                  Не уверен
+          .autorization-buttons
+            .autorization-btn.autorization-go-main
+              a(href="index.html") На главную
+            .autorization-btn.autorization-enter.btn-separator
+              a(href="#") Войти
     .footer.footer-main
       .footer_copyrights Алексей Лапицкий
       .footer_comments создано с любовью в LoftSchool 2016
