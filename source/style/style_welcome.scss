@@ -26,13 +26,12 @@ body {
 }
 
 .wrapper {
-	display: inline-block;
+	display: block;
 	min-height: 100%;
 	width: 100%;
 	margin: 0 auto;
 
 }
-
 
 .header {
 	position: relative;
@@ -43,8 +42,15 @@ body {
 
 .wrap-animation {
 	display: block;
-	position: relative;
-	margin: 0 auto;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin: 35px auto 0;
+
+	min-height: 426px;
+	width: 100%;
+
+ 	transform: translate(-50%, -60%);
 
 	-webkit-transition: -webkit-transform 0.5s;
 	-moz-transition: -moz-transform 0.5s;
@@ -56,6 +62,7 @@ body {
 	-ms-transform-style: preserve-3d;
 	-o-transform-style: preserve-3d;
 	transform-style: preserve-3d; 	
+
 }
 
 .wrap-animation-flip {
@@ -120,26 +127,33 @@ body {
 .main {
 	display: block;
 	position: absolute;
+	left: 50%;
 	top: 0;
-	left: 0;
-	margin: 35px auto 0;
 	text-align: center;
 	border-radius: 0px;
+	min-height: 426px;
+	width: 100%;
+ 
 	
 	@media screen and (min-width: 1200px) {
-		width: 380px;
+		max-width: 380px;
+		margin-left: -190px;
 	};
 
 	@media screen and (max-width: 1200px) {
-		width: 300px;
+		max-width: 380px;
+		margin-left: -190px;
 	};
 
 	@media screen and (max-width: 768px) {
-		width: 300px;
+		max-width: 348px;
+		margin-left: -174px;
 	};
 
 	@media screen and (max-width: 320px) {
-		width: 300px;
+		max-width: 300px;
+		margin-left: -150px;
+		min-height: 422px;
 	};
 
 	-webkit-backface-visibility: hidden;
@@ -147,14 +161,18 @@ body {
 	-ms-backface-visibility: hidden;
 	-o-backface-visibility: hidden;
 	backface-visibility: hidden;	
+
+	transition-delay: 1s;
+	transition-duration: 1s;
+	transition-timing-function: linear;
+
 }
 
 .autorization-wrapper {
 	display: block;
 	position: absolute;
+	left: 50%;
 	top: 0;
-	left: 0;
-	margin: 0 auto;
 	text-align: center;
 	border-radius: 0px;
 	background-color: rgba(18, 38, 32, 0.6);
@@ -163,18 +181,22 @@ body {
 
 	@media screen and (min-width: 1200px) {
 		max-width: 380px;
+		margin-left: -190px;
 	};
 
 	@media screen and (max-width: 1200px) {
 		max-width: 380px;
+		margin-left: -190px;
 	};
 
 	@media screen and (max-width: 768px) {
 		max-width: 348px;
+		margin-left: -174px;
 	};
 
 	@media screen and (max-width: 320px) {
 		max-width: 300px;
+		margin-left: -150px;
 		min-height: 422px;
 	};
 
@@ -183,7 +205,20 @@ body {
 	-ms-transform: rotateY(180deg);
 	-o-transform: rotateY( 180deg );
 	transform: rotateY( 180deg );
+
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	backface-visibility: hidden;	
+
 }
+
+
+.main-hover:hover {
+	background-color: rgba(18, 38, 32, 0.6);
+}
+
 
 .autorization-header {
 	font-family: Webissimo-Regular , serif;
@@ -384,17 +419,6 @@ body {
 }
 
 
-.main-center {
-	position: absolute;
-	top: 50%;
-  left: 50%;
-  transform: translate(-50%, -60%);
-	
-}
-
-.main-hover:hover {
-	background-color: rgba(18, 38, 32, 0.6);
-}
 
 .main_break {
 	display: block;
