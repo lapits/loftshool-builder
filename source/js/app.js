@@ -11,7 +11,6 @@ function textBlockDisplaySetVisibility(textBlock, setVisible) {
 
 };
 
-
 function autorization() {
 	var textBlock;
 	var textMainBlock;
@@ -30,4 +29,11 @@ function autorization() {
   		setTimeout(textBlockDisplaySetVisibility, 200, textMainBlock, false);
   	}
   }
+};
+
+function setMainBlock() {
+	var textMainBlock;
+	var textBlock;
+
+
 };

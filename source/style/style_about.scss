@@ -131,6 +131,13 @@
 	top: 50%;
 }
 
+.top {
+	@include clearfix;
+  &:after {
+    clear: both;
+  }
+
+}
 
 .top-left {
 	display: inline-block;
@@ -268,6 +275,30 @@
 
 }
 
+.main-top {
+	display: block;
+	position: relative;
+	margin: 35px auto 0;
+	text-align: center;
+	border-radius: 0px;
+	
+	@media screen and (min-width: 1200px) {
+		width: 380px;
+	};
+
+	@media screen and (max-width: 1200px) {
+		width: 300px;
+	};
+
+	@media screen and (max-width: 768px) {
+		width: 300px;
+	};
+
+	@media screen and (max-width: 320px) {
+		width: 300px;
+	};
+
+}
 
 .main-about_head_wrapper {
 	display: block;

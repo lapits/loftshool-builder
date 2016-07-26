@@ -34,13 +34,15 @@ html
               a(href="#",class="hamburger_link")
                 img(class="hamburger_img", src="assets/img/icons/hamburger.svg", alt="вызов подменю")
                        
-      .main
+      .main-top
         .main_break
         .main_photo
           img(src="assets/img/ava141.jpg", class="ava", alt="фото")
 
-        .main_name Алексей Лапицкий
-        .main_note Личный сайт веб разработчика
+        .main_name БЛОГ
+        svg.autorization-delim
+          line.line-delimiter(x1="0",y1="3",x2="89",y2="3") 
+        .main_note Статьи, которые я написал
 
       .nav-poligons
         .nav-poligons_left
@@ -58,81 +60,37 @@ html
 
       .main-works
         .main-works_head_wrapper
-          .icon-works
-            include ../images/works_header.svg
-          h1.main-h-big.main-works_header-examples МОИ РАБОТЫ
-          svg.main-delim.main-works_head_wrapper_delim
-            line.line-delimiter(x1="0",y1="0",x2="89",y2="0") 
-        h1.main-works_examples
-          .main-works_examples-left
-            .examples-left-wrapper
-              .main-works_examples-left_header Сайт школы онлайн Образования
-              svg.main-delim.main-works_examples-left_delim
-                line.line-delimiter(x1="0",y1="0",x2="89",y2="0") 
-              .main-works_examples-left_tech HTML , CSS, JAVASCRIPT
-              .main-works_examples-left_button
-                button.main-works-view-btn Посмотреть сайт
-          .main-works_examples-right
-            .main-works_examples-right_view
-              img#work-example-big(src="assets/img/work-example-big-1.png", class="work-example-big", alt="образец работы большая картинка")
-            .main-works_examples-right_up-down
-              .main-works_examples-right_up-down_left
-                img#work-example-small-left(src="assets/img/work-example-small-2.png", class="work-example-small", alt="образец работы превью")
-                .main-works_examples-right_up-down-gray
-                .nav-arrow.arrow-example
-                  a(href="index.html")
-                    svg(class="nav-arrow_big_svg", viewBox="0 0 50 30")
-                      polyline(points="5,4  25,25  45,4" stroke-linejoin="miter" stroke-width="10")
-              .main-works_examples-right_up-down_right
-                img#work-example-small-right(src="assets/img/work-example-small-3.png", class="work-example-small", alt="образец работы превью")
-                .main-works_examples-right_up-down-gray
-                .nav-arrow.arrow-example
-                  a(href="index.html")
-                    svg(class="nav-arrow_big_svg", viewBox="0 0 50 30")
-                      polyline(points="5,25  25,8  45,25" stroke-linejoin="miter" stroke-width="10")
 
-        .main-works_about
-          .main-works_opinion
-            .icon-works
-              include ../images/about_header.svg
-            h1.main-h-big.main-works_opinion_h ЧТО ОБО МНЕ ГОВОРЯТ
-            svg.main-delim.main-works_head_opinion_delim
-              line.line-delimiter(x1="0",y1="0",x2="89",y2="0") 
-            .main-works_opinion-wrapper
-              .main-works_opinion_left
-                .main-works_opinion_photo
-                  img(src="assets/img/kovald.png", class="opinion_photo", alt="фото преподавателя")
-                .main-works_opinion_text Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
-                .main-works_opinion_person Ковальчук Дмитрий
-                .main-works_opinion_person-status — основатель Loftschool
+      //- .footer-nav
+      //-   .footer-nav_info 
+      //-     p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.
+      //-   .footer-nav_nav-group
+      //-     nav.nav-footer
+      //-       ul.nav_list
+      //-         for name,index in navs
+      //-           li(id="nav_list-item_"+index, class="nav_list-item")
+      //-             a(href=navs_links[index], alt="меню: "+name, class="nav_list-link") #{name}
+      //-     nav.social-footer
+      //-       ul.social_list
+      //-         li(id="social_list-item_0", class="social-footer_social_list-item")
+      //-           .nav_social_svg.vk-icon
+      //-             include ../images/vk.svg
+      //-             a(href=socials_links[0],class="social_list-link")
+      //-         li(id="social_list-item_1", class="social-footer_social_list-item")
+      //-           .nav_social_svg
+      //-             include ../images/git.svg
+      //-             a(href=socials_links[1],class="social_list-link")
+      //-         li(id="social_list-item_2", class="social-footer_social_list-item") 
+      //-           .nav_social_svg
+      //-             include ../images/in.svg
+      //-             a(href=socials_links[2],class="social_list-link")
+      //-         li(id="social_list-item_3", class="autorization") 
+      //-           a(href="#", alt="авторизация", class="nav_list-link") Авторизация
 
-              .main-works_opinion_right
-                .main-works_opinion_photo
-                  img(src="assets/img/zarz.png", class="opinion_photo", alt="фото преподавателя")
-                .main-works_opinion_text Этот код выдержет любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
-                .main-works_opinion_person Зар Захаров
-                .main-works_opinion_person-status — главный преподаватель
-
-          .main-works_feedback
-            .main-works_feedback_head СВЯЗАТЬСЯ СО МНОЙ
-            svg.main-delim.main-works_feedback_head-delim
-              line.line-delimiter(x1="0",y1="0",x2="89",y2="0") 
-            form.main-works_feedback-form
-              input.main-works_feedback_name.input.input-feedback-field(placeholder="Имя")
-              input.main-works_feedback_email.input.input-feedback-field(placeholder="Email")
-              textarea.main-works_feedback_msg(placeholder="Ваше сообщение")
-              .main-works_feedback_buttons
-                button.main-works_feedback_btn.btn-border-bottom-left Отправить
-                button.main-works_feedback_btn.btn-border-bottom-right.btn-separator Очистить
-
-          .nav-arrow.arrow-up
-            a(href="index.html")
-              svg(class="nav-arrow_svg", viewBox="0 0 27 17")
-                polyline(points="3,12 13,2 25,12" stroke-width="6")
-
-        //- .footer-nav.footer-up 
+      //-   .footer-nav_quote 
+      //-     p Всегда пишите код так, будто сопровождать его будет склонный к насилию психопат, который знает, где вы живете.
+      //-     p.roboto-bold-italic — Martin Golding
 
     .footer.footer-other.footer-colored
       .footer_copyrights Алексей Лапицкий
       .footer_comments создано с любовью в LoftSchool 2016
-
